@@ -2,7 +2,6 @@
 
 # --> --> --> dagger's install script <-- <-- <--
 
-set -x
 set -e
 
 echo "-> Creating box directory"
@@ -15,13 +14,14 @@ CONFIG_FILES="/$HOME/.config"
 # Neovim
 echo "-> Cloning dagger's neovim repo and creating symlink in $CONFIG_FILES"
 
-git clone https://github.com/JuanBaut/nvim.git /$BOX && echo "-> Success" || (echo "-> Failed"; exit 1)
+git clone https://github.com/JuanBaut/nvim.git /$BOX/nvim && echo "-> Success" || (echo "-> Failed"; exit 1)
 
 if [ -d /$CONFIG_FILES/nvim ]; then
   rm -r /$CONFIG_FILES/nvim
 fi
 
-ln -sf ./$BOX/nvim /$CONFIG_FILES/nvim && echo "-> Success" || (echo "-> Failed"; exit 1)
+cd
+ln -sf /home/dagger/box/nvim /home/dagger/.config/nvim && echo "-> Success" || (echo "-> Failed"; exit 1)
 
 # oh-my-zsh! 
 echo "-> Installing oh-my-zsh!"
@@ -42,10 +42,10 @@ git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-m
 # .zshrc
 echo "-> Creating symlink for .zshrc in $HOME"
 if [ -f /$HOME/.zshrc ]; then
-  mv /$HOME/.zshrc /$HOME/.zshrc.backup 
+  rm /$HOME/.zshrc
 fi
 
-ln -sf ./zshrc /$HOME && echo "-> Success" || (echo "-> Failed"; exit 1)
+ln -sf /home/dagger/.zshrc /home/dagger/ && echo "-> Success" || (echo "-> Failed"; exit 1)
 
 # Kitty
 echo "-> Creating symlink for kitty terminal config files in $CONFIG_FILES"
@@ -53,7 +53,7 @@ if [ -d /$CONFIG_FILES/kitty ]; then
   rm -r /$CONFIG_FILES/kitty
 fi
 
-ln -sf ./kitty /$CONFIG_FILES/kitty && echo "-> Success" || (echo "-> Failed"; exit 1)
+ln -sf  /home/dagger/dotfiles/kitty /home/dagger/.config/kitty && echo "-> Success" || (echo "-> Failed"; exit 1)
 
 # Tmux
 echo "-> Creating symlink for tmux config in $HOME"
@@ -61,7 +61,7 @@ if [ -f /$HOME/.tmux.conf ]; then
   mv /$HOME/.tmux.conf /$HOME/.tmux.conf.backup 
 fi
 
-ln -sf ./.tmux.conf /$HOME && echo "-> Success" || (echo "-> Failed"; exit 1)
+ln -sf /home/dagger/dotfiles/.tmux.conf /home/dagger/ && echo "-> Success" || (echo "-> Failed"; exit 1)
 
 # Nvm
 echo "-> Checking if nvm is already installed and then installing nvm in case it is'nt"
