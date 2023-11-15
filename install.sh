@@ -45,7 +45,7 @@ if [ -f /$HOME/.zshrc ]; then
   rm /$HOME/.zshrc
 fi
 
-ln -sf /home/dagger/.zshrc /home/dagger/ && echo "-> Success" || (echo "-> Failed"; exit 1)
+ln -sf /home/dagger/dotfiles/.zshrc /home/dagger/ && echo "-> Success" || (echo "-> Failed"; exit 1)
 
 # Kitty
 echo "-> Creating symlink for kitty terminal config files in $CONFIG_FILES"
@@ -56,6 +56,8 @@ fi
 ln -sf  /home/dagger/dotfiles/kitty /home/dagger/.config/kitty && echo "-> Success" || (echo "-> Failed"; exit 1)
 
 # Tmux
+git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
+
 echo "-> Creating symlink for tmux config in $HOME"
 if [ -f /$HOME/.tmux.conf ]; then
   mv /$HOME/.tmux.conf /$HOME/.tmux.conf.backup 

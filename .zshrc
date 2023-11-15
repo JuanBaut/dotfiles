@@ -28,7 +28,7 @@ alias nv="fd --type f --hidden --exclude .git | fzf-tmux -p --reverse | xargs nv
 alias h="fd --type f --hidden --exclude .git | fzf-tmux -p --reverse | xargs hx"
 alias zshconfig="nvim ~/.zshrc"
 alias setzsh="source ~/.zshrc"
-alias fetchneo="neofetch --ascii ~/hotfiles/ascii.txt"
+alias fetchneo="neofetch --ascii $HOME/dotfiles/ascii.txt"
 alias remove="rm -rf"
 
 # Nvm
