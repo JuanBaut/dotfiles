@@ -73,6 +73,7 @@ ln -sf "$DOTFILES/.tmux.conf" "$HOME"
 echo "-> Checking if nvm is already installed and then installing nvm in case it is'nt"
 if ! command -v nvm >/dev/null; then
   curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.5/install.sh | bash
+  nvm install node
 else
   echo "-> nvm is already installed, skipping..."
 fi
