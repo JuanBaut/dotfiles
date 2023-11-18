@@ -4,40 +4,44 @@
 
 set -e
 
-echo "-> Creating box directory"
 cd
-mkdir box
+
+# environment variables for references
+# XDG_CACHE_HOME=$HOME/.cache
+XDG_CONFIG_HOME=$HOME/.config
+# XDG_DATA_HOME=$HOME/.local/share
+# XDG_STATE_HOME=$HOME/.local/state
 
 BOX="/$HOME/box"
-CONFIG_FILES="/$HOME/.config"
+DOTFILES="/$BOX/dotfiles"
 
 # Neovim
-echo "-> Cloning dagger's neovim repo and creating symlink in $CONFIG_FILES"
+echo "-> Cloning dagger's neovim repo and creating symlink in $XDG_CONFIG_HOME"
 
-git clone https://github.com/JuanBaut/nvim.git /$BOX/nvim && echo "-> Success" || (echo "-> Failed"; exit 1)
+git clone git@github.com:JuanBaut/nvim.git /$BOX/nvim 
 
-if [ -d /$CONFIG_FILES/nvim ]; then
-  rm -r /$CONFIG_FILES/nvim
+if [ -d /$XDG_CONFIG_HOME/nvim ]; then
+  rm -r /$XDG_CONFIG_HOME/nvim
 fi
 
 cd
-ln -sf /home/dagger/box/nvim /home/dagger/.config/nvim && echo "-> Success" || (echo "-> Failed"; exit 1)
+ln -sf "$BOX/nvim" "$XDG_CONFIG_HOME/nvim"
 
 # oh-my-zsh! 
 echo "-> Installing oh-my-zsh!"
-sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" && echo "-> Success" || (echo "-> Failed"; exit 1)
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 
 # p10k shell prompt
 echo "-> Installing powerlevel10k"
-git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k && echo "-> Success" || (echo "-> Failed"; exit 1)
+git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k
 
 # zsh-syntax-highlighting
 echo "-> Installing zsh-syntax-highlighting"
-git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting && echo "-> Success" || (echo "-> Failed"; exit 1)
+git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
 
 # zsh-autosuggestions
 echo "-> Installing zsh-autosuggestions"
-git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions && echo "-> Success" || (echo "-> Failed"; exit 1)
+git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
 
 # .zshrc
 echo "-> Creating symlink for .zshrc in $HOME"
@@ -45,15 +49,15 @@ if [ -f /$HOME/.zshrc ]; then
   rm /$HOME/.zshrc
 fi
 
-ln -sf /home/dagger/dotfiles/.zshrc /home/dagger/ && echo "-> Success" || (echo "-> Failed"; exit 1)
+ln -sf "$DOTFILES/.zshrc" "$HOME" 
 
 # Kitty
-echo "-> Creating symlink for kitty terminal config files in $CONFIG_FILES"
-if [ -d /$CONFIG_FILES/kitty ]; then
-  rm -r /$CONFIG_FILES/kitty
+echo "-> Creating symlink for kitty terminal config files in $XDG_CONFIG_HOME"
+if [ -d /$XDG_CONFIG_HOME/kitty ]; then
+  rm -r /$XDG_CONFIG_HOME/kitty
 fi
 
-ln -sf  /home/dagger/dotfiles/kitty /home/dagger/.config/kitty && echo "-> Success" || (echo "-> Failed"; exit 1)
+ln -sf  "$DOTFILES/kitty" "$XDG_CONFIG_HOME/kitty"
 
 # Tmux
 git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
@@ -63,14 +67,14 @@ if [ -f /$HOME/.tmux.conf ]; then
   mv /$HOME/.tmux.conf /$HOME/.tmux.conf.backup 
 fi
 
-ln -sf /home/dagger/dotfiles/.tmux.conf /home/dagger/ && echo "-> Success" || (echo "-> Failed"; exit 1)
+ln -sf "$DOTFILES/.tmux.conf" "$HOME"
 
 # Nvm
 echo "-> Checking if nvm is already installed and then installing nvm in case it is'nt"
 if ! command -v nvm >/dev/null; then
-  curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.5/install.sh | bash && echo "-> Success" || (echo "-> Failed"; exit 1)
+  curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.5/install.sh | bash
 else
   echo "-> nvm is already installed, skipping..."
 fi
 
-echo "-> We're done, enjoy."
+echo "-> We're done, get coding."

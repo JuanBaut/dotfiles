@@ -24,11 +24,10 @@ else
 fi
 
 # Aliases
-alias nv="fd --type f --hidden --exclude .git | fzf-tmux -p --reverse | xargs nvim"
-alias h="fd --type f --hidden --exclude .git | fzf-tmux -p --reverse | xargs hx"
-alias zshconfig="nvim ~/.zshrc"
+alias nv="nvim"
+alias zshconfig="$EDITOR ~/.zshrc"
 alias setzsh="source ~/.zshrc"
-alias fetchneo="neofetch --ascii $HOME/dotfiles/ascii.txt"
+alias fetchneo="neofetch --ascii $HOME/box/dotfiles/ascii.txt"
 alias remove="rm -rf"
 
 # Nvm
