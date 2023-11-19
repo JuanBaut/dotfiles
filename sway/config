@@ -6,7 +6,7 @@ include /etc/sway/config.d/*
 include catppuccin-mocha
 
 # target                 title     bg    text   indicator  border
-client.focused           $crust    $base $text  $crust     $crust
+client.focused           $overlay2 $base $text  $overlay2  $overlay2
 client.focused_inactive  $overlay0 $base $text  $sapphire  $overlay0
 client.unfocused         $overlay0 $base $text  $sapphire  $overlay0
 client.urgent            $peach    $base $peach $overlay0  $peach
