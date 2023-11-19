@@ -34,7 +34,7 @@ input "1267:12795:ASUE120D:00_04F3:31FB_Touchpad" {
 }
 
 # Output config
-output * bg /home/dagger/Pictures/slava-auchynnikau-2CNVPonHhVA-unsplash.jpg fill
+output * bg /home/dagger/Pictures/oskar-kadaksoo-sPkL-6SQfgA-unsplash.jpg fill
 output eDP-1 scale 2
 
 # --- dagger's config up

@@ -26,6 +26,7 @@ fi
 # Aliases
 alias nv="nvim"
 alias zshconfig="$EDITOR ~/.zshrc"
+alias tmuxconfig="$EDITOR ~/.tmux.conf"
 alias setzsh="source ~/.zshrc"
 alias fetchneo="neofetch --ascii $HOME/box/dotfiles/ascii.txt"
 alias remove="rm -rf"
