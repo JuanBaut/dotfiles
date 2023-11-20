@@ -8,15 +8,13 @@ required
 - x1
   128.7x83.2mm
 
-- x1.5
-  193.1x124.8mm
-- delete decimals
-  193x124
+- x0.5
+  64x42
 
 - use this command to change size
 
 ```
-sudo libinput measure touchpad-size 193x124
+sudo libinput measure touchpad-size 64x42
 ```
 
 - set config result from previous command here
@@ -28,6 +26,6 @@ sudo nvim /etc/udev/hwdb.d/61-evdev-local.hwdb
 - make actual config take effect
 
 ```
-  sudo systemd-hwdb update
-  sudo udevadm trigger
+sudo systemd-hwdb update
+sudo udevadm trigger
 ```

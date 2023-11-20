@@ -30,6 +30,8 @@ input "1267:12795:ASUE120D:00_04F3:31FB_Touchpad" {
     tap enabled
     natural_scroll enabled
     middle_emulation enabled
+    accel_profile flat
+    pointer_accel 1 
 }
 
 # Output config
@@ -59,7 +61,7 @@ set $rofi_cmd rofi \
 # Shows a combined list of the applications with desktop files and
 # executables from PATH.
 # TODO: add window with the next release of rofi-wayland
-set $menu $rofi_cmd -show drun
+set $menu $rofi_cmd -show run
 
 ### Key bindings
 #
