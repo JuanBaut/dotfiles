@@ -1,7 +1,6 @@
 include /etc/sway/config.d/*
 
 # catppuccin
-
 # target                 title     bg    text   indicator  border
 include catppuccin-mocha
 
@@ -34,7 +33,7 @@ input "1267:12795:ASUE120D:00_04F3:31FB_Touchpad" {
 }
 
 # Output config
-output * bg /home/dagger/Pictures/oskar-kadaksoo-sPkL-6SQfgA-unsplash.jpg fill
+output * bg /home/dagger/Pictures/jared-erondu-RkVADNwMLJY-unsplash.jpg fill
 output eDP-1 scale 2
 
 # --- dagger's config up
@@ -114,6 +113,9 @@ set $menu $rofi_cmd -show drun
 #
 # Workspaces:
 #
+    bindsym $mod+n workspace next
+    bindsym $mod+p workspace prev
+
     # Switch to workspace
     bindsym $mod+1 workspace number 1
     bindsym $mod+2 workspace number 2
