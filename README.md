@@ -1,5 +1,8 @@
 # dagger's dotfiles
 
+_please make sure to create /box directory in $HOME before using install scripts_
+- `cd && mkdir box`
+
 These are only for dev env (should work on linux, wsl and maybe osx)
 ---
 1. neofetch ascii
