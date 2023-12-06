@@ -1,8 +1,6 @@
-# dotfiles
+# dagger's dotfiles
 
-dagger's dotfiles
-
-These are only for dev env
+These are only for dev env (should work on linux, wsl and maybe osx)
 ---
 1. neofetch ascii
 2. zsh setup with:
@@ -10,26 +8,42 @@ These are only for dev env
     - zsh-syntax-highlighting
     - zsh-autosuggestions
     - powerlevel10k shell prompt
-3. kitty or alacritty
-4. neovim setup
-5. tmux or zellij
-6. nvm quick install
+3. neovim setup
+4. tmux or zellij
+5. nvm quick install
 
-These are for linux env
+These are for linux
 ---
 1. sway
 2. waybar
 3. rofi
 4. dunst
+5. kitty or alacritty
 
-### dependencies
-
+Extra dependencies (not above)
+---
 - JetBrains Mono Nerd Font
-- tmux or zellij
-- nvim
-    - fd (fd-find), fzf, ripgrep
+- fd (fd-find), fzf, ripgrep
 - git
-- kitty or alacritty
 - neofetch
-- zsh
 - curl
+
+        ,__.==;:::::;.                            
+         \;:;::::;';::.                .           
+         ;:::::;     ;::              /#\          
+        ,:::::;       ;:             /###.        
+        ::::::;       ;:            /#####.       
+        ;:::::;       ;:           /#######.      
+      ,;;::::::,     ,:;          / \#######.     
+    ;;:::::::::;.,,,.;:'         /  / \######.    
+  .;:;:;:::::::::::::::::;,     /  /    \#####.   
+ .;:::::;:::::::::::::::::;,   /  /       \####.  
+;`;::::::`':::::::::::::::; ;|/  /          +###. 
+;`;:::::::`;::::::::::::; ;::|  /            \###.
+;:`;:::::::`;:::::::::; ;::::| /              ###|
+;::`;:::::::`:::::::; ;::::::|/                ##| 
+`;::`;:::::::`;::; ;:::::::::[                 #/  
+ ;:::`;::::::::`;:::::::::::::]                /    
+ `;::::`;:::::::::::::::::::::|                     
+  `;::::`;::::::::::;'/  /`;::|                     
+   ;:::::`;:::::::;' /  /   `'/                     
