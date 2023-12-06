@@ -23,12 +23,11 @@ These are for linux
 4. dunst
 5. kitty or alacritty
 
-Extra dependencies (not above)
+Required dependencies (not above)
 ---
 - JetBrains Mono Nerd Font
 - fd (fd-find), fzf, ripgrep
 - git
-- neofetch
 - curl
 
 ```
