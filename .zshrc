@@ -27,7 +27,7 @@ alias nv="nvim"
 alias zshconfig="$EDITOR ~/.zshrc"
 alias tmuxconfig="$EDITOR ~/.tmux.conf"
 alias setzsh="source ~/.zshrc"
-alias fetchneo="neofetch --ascii $HOME/box/dotfiles/ascii.txt"
+alias fetchneo="neofetch --ascii $HOME/box/dotfiles/reaper.txt"
 alias remove="rm -rf"
 
 # Nvm
