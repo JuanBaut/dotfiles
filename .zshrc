@@ -9,8 +9,7 @@ fi
 
 plugins=(git tmux zsh-autosuggestions zsh-syntax-highlighting)
 
-ZSH_TMUX_AUTOSTART=true
-
+ZSH_TMUX_AUTOSTART=false
 ZSH_THEME="powerlevel10k/powerlevel10k"
 
 export PATH="$HOME/.local/bin:$PATH"

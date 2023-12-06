@@ -13,6 +13,14 @@ XDG_CONFIG_HOME=$HOME/.config
 BOX="/$HOME/box"
 DOTFILES="/$BOX/dotfiles"
 
+# Kitty
+echo "-> Creating symlink for kitty terminal config files in $XDG_CONFIG_HOME"
+if [ -d /$XDG_CONFIG_HOME/kitty ]; then
+  rm -r /$XDG_CONFIG_HOME/kitty
+fi
+
+ln -sf  "$DOTFILES/kitty" "$XDG_CONFIG_HOME/kitty"
+
 # Sway
 echo "-> Creating symlink for sway config files in $XDG_CONFIG_HOME"
 if [ -d /$XDG_CONFIG_HOME/sway ]; then

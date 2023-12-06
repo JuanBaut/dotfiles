@@ -21,7 +21,7 @@ echo "-> Cloning dagger's neovim repo and creating symlink in $XDG_CONFIG_HOME"
 git clone git@github.com:JuanBaut/nvim.git /$BOX/nvim 
 
 if [ -d /$XDG_CONFIG_HOME/nvim ]; then
-  rm -r /$XDG_CONFIG_HOME/nvim
+  sudo rm -r /$XDG_CONFIG_HOME/nvim
 fi
 
 cd
@@ -50,14 +50,6 @@ if [ -f /$HOME/.zshrc ]; then
 fi
 
 ln -sf "$DOTFILES/.zshrc" "$HOME" 
-
-# Kitty
-echo "-> Creating symlink for kitty terminal config files in $XDG_CONFIG_HOME"
-if [ -d /$XDG_CONFIG_HOME/kitty ]; then
-  rm -r /$XDG_CONFIG_HOME/kitty
-fi
-
-ln -sf  "$DOTFILES/kitty" "$XDG_CONFIG_HOME/kitty"
 
 # Tmux
 git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
