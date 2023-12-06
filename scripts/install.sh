@@ -106,7 +106,7 @@ select opt in "${opt_zsh_syntax[@]}"; do
     case $opt in
         "Yes")
             echo -e "\nInstalling zsh-syntax-highlighting\n"
-            git clone https://github.com/zsh-users/zsh-syntax-highlighting.git "${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting"
+            git clone https://github.com/zsh-users/zsh-syntax-highlighting.git "${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting"
             break
             ;;
         "No")
@@ -132,7 +132,7 @@ select opt in "${opt_zsh_auto[@]}"; do
     case $opt in
         "Yes")
             echo -e "\nInstalling zsh-autosuggestions\n"
-            git clone https://github.com/zsh-users/zsh-autosuggestions "${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions"
+            git clone https://github.com/zsh-users/zsh-autosuggestions "${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/plugins/zsh-autosuggestions"
             break
             ;;
         "No")
