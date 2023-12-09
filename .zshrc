@@ -7,9 +7,9 @@ if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]
   source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
 fi
 
-plugins=(git zsh-autosuggestions zsh-syntax-highlighting)
+plugins=(git tmux zsh-autosuggestions zsh-syntax-highlighting)
 
-ZSH_TMUX_AUTOSTART=false
+ZSH_TMUX_AUTOSTART=true
 ZSH_THEME="powerlevel10k/powerlevel10k"
 
 export PATH="$HOME/.local/bin:$PATH"
@@ -22,11 +22,24 @@ else
   export EDITOR='nvim'
 fi
 
+WIN="/mnt/c/Users/dagger/AppData/Roaming/alacritty"
+
 # Aliases
 alias nv="nvim"
-alias zshconfig="$EDITOR ~/.zshrc"
-alias tmuxconfig="$EDITOR ~/.tmux.conf"
-alias setzsh="source ~/.zshrc"
+alias config-nvim="$EDITOR $HOME/box/nvim/"
+
+alias config-zsh="$EDITOR ~/.zshrc"
+alias set-zsh="source ~/.zshrc"
+
+alias config-tmux="$EDITOR ~/.tmux.conf"
+alias set-tmux="tmux source ~/.tmux.conf"
+
+alias config-alacritty="$EDITOR $HOME/box/dotfiles/alacritty/alacritty.yml"
+alias clean-alacritty="rm $WIN/alacritty.yml"
+alias copy-alacritty="cp $HOME/box/dotfiles/alacritty/alacritty.yml $WIN"
+alias set-alacritty="clean-alacritty && copy-alacritty"
+
+alias code="cd && cd dev/ && ls -a"
 alias fetchneo="neofetch --ascii $HOME/box/dotfiles/reaper.txt"
 alias remove="rm -rf"
 

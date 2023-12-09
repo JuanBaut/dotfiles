@@ -221,7 +221,6 @@ select opt in "${opt_nvm[@]}"; do
             echo -e "\nChecking if nvm is already installed and then installing nvm in case it isn't\n"
             if ! command -v nvm >/dev/null; then
                 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.5/install.sh | bash
-                nvm install node
             else
                 echo -e "\nNvm is already installed, skipping...\n"
             fi
