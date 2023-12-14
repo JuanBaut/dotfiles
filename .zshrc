@@ -11,6 +11,7 @@ plugins=(git tmux zsh-autosuggestions zsh-syntax-highlighting)
 
 ZSH_TMUX_AUTOSTART=true
 ZSH_THEME="powerlevel10k/powerlevel10k"
+ZLE_RPROMPT_INDENT=0
 
 export PATH="$HOME/.local/bin:$PATH"
 export ZSH="$HOME/.oh-my-zsh"
@@ -22,7 +23,8 @@ else
   export EDITOR='nvim'
 fi
 
-WIN="/mnt/c/Users/dagger/AppData/Roaming/alacritty"
+ALACRITTY="/mnt/c/Users/dagger/AppData/Roaming/alacritty"
+WEZTERM="/mnt/c/Users/dagger/"
 
 # Aliases
 alias nv="nvim"
@@ -35,11 +37,17 @@ alias config-tmux="$EDITOR ~/.tmux.conf"
 alias set-tmux="tmux source ~/.tmux.conf"
 
 alias config-alacritty="$EDITOR $HOME/box/dotfiles/alacritty/alacritty.yml"
-alias clean-alacritty="rm $WIN/alacritty.yml"
-alias copy-alacritty="cp $HOME/box/dotfiles/alacritty/alacritty.yml $WIN"
+alias clean-alacritty="rm $ALACRITTY/alacritty.yml"
+alias copy-alacritty="cp $HOME/box/dotfiles/alacritty/alacritty.yml $ALACRITTY"
 alias set-alacritty="clean-alacritty && copy-alacritty"
 
+alias config-wezterm="$EDITOR $HOME/box/dotfiles/wezterm/.wezterm.lua"
+alias clean-wezterm="rm $WEZTERM/.wezterm.lua"
+alias copy-wezterm="cp $HOME/box/dotfiles/wezterm/.wezterm.lua $WEZTERM" 
+alias set-wezterm="clean-wezterm && copy-wezterm"
+
 alias code="cd && cd dev/ && ls -a"
+alias inpsql="sudo -u postgres psql"
 alias fetchneo="neofetch --ascii $HOME/box/dotfiles/reaper.txt"
 alias remove="rm -rf"
 
