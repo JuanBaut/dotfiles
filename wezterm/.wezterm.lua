@@ -20,19 +20,19 @@ end)
 -- For example, changing the color scheme:
 config.color_scheme = "Catppuccin Mocha"
 config.enable_tab_bar = false
-config.font = wezterm.font("JetBrainsMono Nerd Font Propo")
+config.font = wezterm.font("Lilex Nerd Font Propo")
 config.font_size = 14
 config.window_padding = {
-	left = 7,
-	right = 7,
-	top = 7,
-	bottom = 7,
+	left = 5,
+	right = 0,
+	top = 4,
+	bottom = 0,
 }
 config.window_decorations = "RESIZE"
 config.default_domain = "WSL:Arch"
 config.front_end = "WebGpu"
 
--- config.webgpu_preferred_adapter = gpus[2]
+config.webgpu_preferred_adapter = gpus[1]
 config.animation_fps = 165
 config.max_fps = 165
 

@@ -45,6 +45,7 @@ alias config-wezterm="$EDITOR $HOME/box/dotfiles/wezterm/.wezterm.lua"
 alias clean-wezterm="rm $WEZTERM/.wezterm.lua"
 alias copy-wezterm="cp $HOME/box/dotfiles/wezterm/.wezterm.lua $WEZTERM" 
 alias set-wezterm="clean-wezterm && copy-wezterm"
+alias refresh-wezterm="rm $HOME/box/dotfiles/wezterm/.wezterm.lua && cp $WEZTERM/.wezterm.lua $HOME/box/dotfiles/wezterm/"
 
 alias code="cd && cd dev/ && ls -a"
 alias inpsql="sudo -u postgres psql"
