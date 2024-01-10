@@ -7,9 +7,9 @@ if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]
   source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
 fi
 
-plugins=(git tmux zsh-autosuggestions zsh-syntax-highlighting)
+plugins=(git tmux zsh-autosuggestions zsh-syntax-highlighting zsh-vi-mode)
 
-ZSH_TMUX_AUTOSTART=false
+ZSH_TMUX_AUTOSTART=true
 ZSH_THEME="powerlevel10k/powerlevel10k"
 ZLE_RPROMPT_INDENT=0
 

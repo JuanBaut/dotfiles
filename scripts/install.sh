@@ -136,7 +136,7 @@ select opt in "${opt_zsh_auto[@]}"; do
             break
             ;;
         "No")
-            echo -e "\nSkipping zsh-syntax-highlighting...\n"
+            echo -e "\nSkipping zsh-autosuggestions...\n"
             break
             ;;
         "Quit")
@@ -149,6 +149,29 @@ select opt in "${opt_zsh_auto[@]}"; do
     esac
 done
 
+# zsh-autosuggestions
+PS3="Install zsh-vi-mode? "
+opt_zsh_vi=("Yes" "No" "Quit")
+select opt in "${opt_zsh_vi[@]}"; do
+    case $opt in
+        "Yes")
+            echo -e "\nInstalling zsh-vi-mode\n"
+            git clone https://github.com/jeffreytse/zsh-vi-mode "${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/plugins/zsh-vi-mode"
+            break
+            ;;
+        "No")
+            echo -e "\nSkipping zsh-vi-mode...\n"
+            break
+            ;;
+        "Quit")
+            echo -e "\nNothing done, exiting script\n"
+            exit 0
+            ;;
+        *)
+            echo -e "\nInvalid option. Please try again.\n"
+            ;;
+    esac
+done
 echo "----------------------------------------"
 
 # .zshrc
