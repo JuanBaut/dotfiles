@@ -9,7 +9,7 @@ fi
 
 plugins=(git tmux zsh-autosuggestions zsh-syntax-highlighting)
 
-ZSH_TMUX_AUTOSTART=true
+ZSH_TMUX_AUTOSTART=false
 ZSH_THEME="powerlevel10k/powerlevel10k"
 ZLE_RPROMPT_INDENT=0
 
@@ -27,6 +27,8 @@ ALACRITTY="/mnt/c/Users/dagger/AppData/Roaming/alacritty"
 WEZTERM="/mnt/c/Users/dagger/"
 
 # Aliases
+alias c="clear"
+
 alias nv="nvim"
 alias config-nvim="$EDITOR $HOME/box/nvim/"
 
@@ -36,10 +38,8 @@ alias set-zsh="source ~/.zshrc"
 alias config-tmux="$EDITOR ~/.tmux.conf"
 alias set-tmux="tmux source ~/.tmux.conf"
 
-alias config-alacritty="$EDITOR $HOME/box/dotfiles/alacritty/alacritty.yml"
-alias clean-alacritty="rm $ALACRITTY/alacritty.yml"
-alias copy-alacritty="cp $HOME/box/dotfiles/alacritty/alacritty.yml $ALACRITTY"
-alias set-alacritty="clean-alacritty && copy-alacritty"
+alias config-alacritty="$EDITOR $HOME/box/dotfiles/alacritty/alacritty.toml"
+alias set-alacritty="rm $ALACRITTY/alacritty.toml && cp $HOME/box/dotfiles/alacritty/alacritty.toml $ALACRITTY"
 
 alias config-wezterm="$EDITOR $HOME/box/dotfiles/wezterm/.wezterm.lua"
 alias clean-wezterm="rm $WEZTERM/.wezterm.lua"

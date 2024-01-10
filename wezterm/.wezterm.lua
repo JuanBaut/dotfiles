@@ -32,7 +32,7 @@ config.window_decorations = "RESIZE"
 config.default_domain = "WSL:Arch"
 config.front_end = "WebGpu"
 
-config.webgpu_preferred_adapter = gpus[1]
+config.webgpu_preferred_adapter = gpus[2]
 config.animation_fps = 165
 config.max_fps = 165
 
