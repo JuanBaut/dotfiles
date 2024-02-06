@@ -9,7 +9,8 @@ TERM = "xterm-256color"
 size = 14
 
 [font.normal]
-family = "Lilex Nerd Font Propo"
+#family = "Lilex Nerd Font Propo"
+family = "GeistMono Nerd Font Propo"
 
 [shell]
 program = "wsl ~ tmux"
@@ -17,10 +18,13 @@ program = "wsl ~ tmux"
 [window]
 decorations = "none"
 dynamic_title = false
+dynamic_padding = true
 startup_mode = "Maximized"
 title = "Alacritty"
-dynamic_padding = true
 
 [window.padding]
 x = 5
 y = 5
+
+[mouse]
+hide_when_typing = true

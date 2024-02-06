@@ -39,7 +39,7 @@ alias set-tmux="tmux source ~/.tmux.conf"
 
 alias config-alacritty="$EDITOR $HOME/box/dotfiles/alacritty/alacritty.toml"
 alias set-alacritty="rm $ALACRITTY/alacritty.toml && cp $HOME/box/dotfiles/alacritty/alacritty.toml $ALACRITTY"
-alias theme-alacritty="set-alacritty && cp $HOME/box/dotfiles/alacritty/theme.toml $ALACRITTY"
+alias theme-alacritty="set-alacritty && cp $HOME/box/dotfiles/alacritty/theme.yml $ALACRITTY"
 
 alias current-be="cd && cd dev/AppGuard/AppGuard-Back/back-end && ls -a"
 alias current-fe="cd && cd dev/AppGuard/AppGuard-Front/front-end && ls -a"
