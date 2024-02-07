@@ -215,8 +215,7 @@ select opt in "${opt_tmux[@]}"; do
             if [ -f "/$HOME/.tmux.conf" ]; then
                 rm "/$HOME/.tmux.conf"
             fi
-            ln -sf "$DOTFILES/.tmux.conf" "$HOME"
-
+            ln -sf "$DOTFILES/tmux/.tmux.conf" "$HOME"
             break
             ;;
         "No")

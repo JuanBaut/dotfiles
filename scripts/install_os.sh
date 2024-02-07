@@ -14,43 +14,43 @@ BOX="/$HOME/box"
 DOTFILES="/$BOX/dotfiles"
 
 # Kitty
-echo "-> Creating symlink for kitty terminal config files in $XDG_CONFIG_HOME"
-if [ -d /$XDG_CONFIG_HOME/kitty ]; then
-  rm -r /$XDG_CONFIG_HOME/kitty
-fi
+#echo "-> Creating symlink for kitty terminal config files in $XDG_CONFIG_HOME"
+#if [ -d "/$XDG_CONFIG_HOME/kitty" ]; then
+#    rm -r "/$XDG_CONFIG_HOME/kitty"
+#fi
+#ln -sf  "$DOTFILES/kitty" "$XDG_CONFIG_HOME/kitty"
 
-ln -sf  "$DOTFILES/kitty" "$XDG_CONFIG_HOME/kitty"
 
 # Sway
 echo "-> Creating symlink for sway config files in $XDG_CONFIG_HOME"
-if [ -d /$XDG_CONFIG_HOME/sway ]; then
-  rm -rf /$XDG_CONFIG_HOME/sway
+if [ -d "/$XDG_CONFIG_HOME/sway" ]; then
+    rm -rf "/$XDG_CONFIG_HOME/sway"
 fi
 
-ln -sf  "$DOTFILES/sway" "$XDG_CONFIG_HOME/sway"
+ln -sf  "$DOTFILES/os/sway" "$XDG_CONFIG_HOME/sway"
 
 # Waybar
 echo "-> Creating symlink for waybar config files in $XDG_CONFIG_HOME"
-if [ -d /$XDG_CONFIG_HOME/waybar ]; then
-  rm -rf /$XDG_CONFIG_HOME/waybar
+if [ -d "/$XDG_CONFIG_HOME/waybar" ]; then
+    rm -rf "/$XDG_CONFIG_HOME/waybar"
 fi
 
-ln -sf  "$DOTFILES/waybar" "$XDG_CONFIG_HOME/waybar"
+ln -sf  "$DOTFILES/os/waybar" "$XDG_CONFIG_HOME/waybar"
 
 # Dunst
 echo "-> Creating symlink for dunst config files in $XDG_CONFIG_HOME"
-if [ -d /$XDG_CONFIG_HOME/dunst ]; then
-  rm -rf /$XDG_CONFIG_HOME/dunst
+if [ -d "/$XDG_CONFIG_HOME/dunst" ]; then
+    rm -rf "/$XDG_CONFIG_HOME/dunst"
 fi
 
-ln -sf  "$DOTFILES/dunst" "$XDG_CONFIG_HOME/dunst"
+ln -sf  "$DOTFILES/os/dunst" "$XDG_CONFIG_HOME/dunst"
 
 # Rofi
 echo "-> Creating symlink for rofi config files in $XDG_CONFIG_HOME"
-if [ -d /$XDG_CONFIG_HOME/rofi ]; then
-  rm -rf /$XDG_CONFIG_HOME/rofi
+if [ -d "/$XDG_CONFIG_HOME/rofi" ]; then
+    rm -rf "/$XDG_CONFIG_HOME/rofi"
 fi
 
-ln -sf  "$DOTFILES/rofi" "$XDG_CONFIG_HOME/rofi"
+ln -sf  "$DOTFILES/os/rofi" "$XDG_CONFIG_HOME/rofi"
 
 echo "-> We're done, everything should look better now."
