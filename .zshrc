@@ -7,11 +7,11 @@ if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]
   source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
 fi
 
-plugins=(git zsh-autosuggestions zsh-syntax-highlighting zsh-vi-mode)
+plugins=(git zsh-syntax-highlighting zsh-vi-mode)
 
 ZSH_THEME="powerlevel10k/powerlevel10k"
-# ZSH_TMUX_AUTOSTART=false
 ZLE_RPROMPT_INDENT=0
+# ZSH_TMUX_AUTOSTART=false
 
 export PATH="$HOME/.local/bin:$PATH"
 export ZSH="$HOME/.oh-my-zsh"
@@ -27,9 +27,10 @@ ALACRITTY="/mnt/c/Users/dagger/AppData/Roaming/alacritty"
 
 # Aliases
 alias c="clear"
-
+alias f='cd $(fd --type d --hidden --exclude .git --exclude node_module --exclude .cache --exclude .npm --exclude .mozilla --exclude .meteor --exclude .nv | fzf)'
+alias dev='cd ~/dev && cd $(fd --type d --hidden --exclude .git --exclude node_module --exclude .cache --exclude .npm --exclude .mozilla --exclude .meteor --exclude .nv | fzf)'
+alias box='cd ~/box && cd $(fd --type d --hidden --exclude .git --exclude node_module --exclude .cache --exclude .npm --exclude .mozilla --exclude .meteor --exclude .nv | fzf)'
 alias nv="nvim"
-alias config-nvim="cd && cd $HOME/box/nvim/lua/dagger/ && nv"
 
 alias config-zsh="$EDITOR ~/.zshrc"
 alias set-zsh="source ~/.zshrc"
@@ -41,12 +42,8 @@ alias config-alacritty="$EDITOR $HOME/box/dotfiles/alacritty/alacritty.toml"
 alias set-alacritty="rm $ALACRITTY/alacritty.toml && cp $HOME/box/dotfiles/alacritty/alacritty.toml $ALACRITTY"
 alias theme-alacritty="set-alacritty && cp $HOME/box/dotfiles/alacritty/theme.yml $ALACRITTY"
 
-alias current-be="cd && cd dev/AppGuard/AppGuard-Back/back-end && ls -a"
-alias current-fe="cd && cd dev/AppGuard/AppGuard-Front/front-end && ls -a"
-alias dev="cd && cd dev/ && ls -a"
 alias inpsql="sudo -u postgres psql"
 alias fetchneo="neofetch --ascii $HOME/box/dotfiles/reaper.txt"
-alias remove="rm -rf"
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
