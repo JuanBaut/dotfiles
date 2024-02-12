@@ -22,7 +22,7 @@ dynamic_title = false
 startup_mode = "Maximized"
 title = "Alacritty"
 dynamic_padding = true
-option_as_alt = "OnlyLeft"
+option_as_alt = "Both"
 
 [window.padding]
 x = 5
