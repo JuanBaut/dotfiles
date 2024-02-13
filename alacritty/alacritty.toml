@@ -23,6 +23,8 @@ startup_mode = "Maximized"
 title = "Alacritty"
 dynamic_padding = true
 option_as_alt = "Both"
+opacity = 0.6
+blur = true
 
 [window.padding]
 x = 5
