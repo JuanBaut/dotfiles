@@ -27,9 +27,9 @@ ALACRITTY="/mnt/c/Users/dagger/AppData/Roaming/alacritty"
 
 # Aliases
 alias c="clear"
-alias f='cd $(fd --type d --hidden --exclude .git --exclude node_module --exclude .cache --exclude .npm --exclude .mozilla --exclude .meteor --exclude .nv | fzf)'
-alias dev='cd ~/dev && cd $(fd --type d --hidden --exclude .git --exclude node_module --exclude .cache --exclude .npm --exclude .mozilla --exclude .meteor --exclude .nv | fzf)'
-alias box='cd ~/box && cd $(fd --type d --hidden --exclude .git --exclude node_module --exclude .cache --exclude .npm --exclude .mozilla --exclude .meteor --exclude .nv | fzf)'
+alias f='cd $(fd --type d --hidden --exclude .git --exclude node_module --exclude .cache --exclude .npm --exclude .mozilla --exclude .meteor --exclude .nv --max-depth 2 | fzf)'
+alias dev='cd ~/dev && cd $(fd --type d --hidden --exclude .git --exclude node_module --exclude .cache --exclude .npm --exclude .mozilla --exclude .meteor --exclude .nv --max-depth 2 | fzf)'
+alias box='cd ~/box && cd $(fd --type d --hidden --exclude .git --exclude node_module --exclude .cache --exclude .npm --exclude .mozilla --exclude .meteor --exclude .nv --max-depth 2 | fzf)'
 alias nv="nvim"
 
 alias config-zsh="$EDITOR ~/.zshrc"
