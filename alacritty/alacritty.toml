@@ -19,7 +19,7 @@ family = "GeistMono Nerd Font Propo"
 [window]
 decorations = "none"
 dynamic_title = false
-startup_mode = "Maximized"
+startup_mode = "SimpleFullscreen"
 title = "Alacritty"
 dynamic_padding = true
 option_as_alt = "Both"
