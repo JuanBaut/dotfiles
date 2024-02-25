@@ -16,8 +16,9 @@ _please make sure to create /box directory in $HOME before using install scripts
 4. tmux (i don't like zellij)
 5. nvm quick install
 
-## These are for linux
+## These are for linux (arch)
 
+- unzip
 1. sway
 2. waybar
 3. rofi
