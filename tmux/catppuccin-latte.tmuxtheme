@@ -2,19 +2,21 @@
 # WARNING: hex colors can't contain capital letters
 
 # --> Catppuccin (Latte)
-thm_bg="#000000"
+thm_bg="#101010"
 
 thm_fg="#ffffff"
 thm_cyan="#ffffff"
 
 thm_black="#ffffff"
-thm_gray="#303030"
 
-thm_orange="#909090"
-thm_green="#909090"
+thm_gray="#505050"
+thm_orange="#A0A0A0"
+thm_green="#A0A0A0"
+
+thm_black4="#acb0be"
+
 thm_magenta="#ea76cb"
 thm_pink="#8839ef"
-thm_red="#d20f39"
+thm_red="#d05050"
 thm_yellow="#df8e1d"
 thm_blue="#1e66f5"
-thm_black4="#acb0be"
