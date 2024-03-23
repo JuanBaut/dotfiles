@@ -233,35 +233,4 @@ select opt in "${opt_tmux[@]}"; do
 done
 
 echo "----------------------------------------"
-
-# Nvm
-PS3="Install Nvm? "
-opt_nvm=("Yes" "No" "Quit")
-select opt in "${opt_nvm[@]}"; do
-    case $opt in
-        "Yes")
-            echo -e "\nChecking if nvm is already installed and then installing nvm in case it isn't\n"
-            if ! command -v nvm >/dev/null; then
-                curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.5/install.sh | bash
-            else
-                echo -e "\nNvm is already installed, skipping...\n"
-            fi
-
-            break
-            ;;
-        "No")
-            echo -e "\nSkipping Nvm install...\n"
-            break
-            ;;
-        "Quit")
-            echo -e "\nNothing done, exiting script\n"
-            exit 0
-            ;;
-        *)
-            echo -e "\nInvalid option. Please try again.\n"
-            ;;
-    esac
-done
-
-echo "----------------------------------------"
 echo -e "\nWe're done, get coding.\n"
