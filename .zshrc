@@ -44,6 +44,7 @@ alias theme-alacritty="set-alacritty && cp $HOME/box/dotfiles/alacritty/theme.ym
 
 alias inpsql="sudo -u postgres psql"
 alias fetchneo="neofetch --ascii $HOME/box/dotfiles/reaper.txt"
+alias fetchfast="fastfetch --logo-color-1 blue --file $HOME/box/dotfiles/reaper.txt"
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
