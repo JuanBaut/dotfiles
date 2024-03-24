@@ -1,7 +1,7 @@
 configuration{
     modi: "run,drun,window";
     show-icons: false;
-    terminal: "kitty";
+    terminal: "alacritty";
     drun-display-format: "{name}";
     location: 0;
     disable-history: false;
@@ -13,4 +13,4 @@ configuration{
     sidebar-mode: true;
 }
 
-@theme "./catppuccin.rasi"
+@theme "./monochrome.rasi"
