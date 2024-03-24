@@ -6,6 +6,7 @@ in {
     keepassxc
     fastfetch
     neofetch
+    cbonsai
     unzip
     btop
     tmux
@@ -15,6 +16,7 @@ in {
     zsh
     fd
 
+    i3lock-color
     imagemagick
     playerctl
     xidlehook
@@ -29,5 +31,9 @@ in {
     xsel
     rofi
     feh
+
+    ungoogled-chromium
+    discord
+    spotify
   ];
 }

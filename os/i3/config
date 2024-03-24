@@ -3,26 +3,23 @@ include theme
 set $mod Mod4
 font pango:GeistMono NFP 10
 
-default_border pixel 1
+default_border pixel 0
 gaps inner 8
 gaps outer 0
 
-exec_always --no-startup-id sh $HOME/.fehbg &
-exec_always --no-startup-id sh $HOME/.config/polybar/launch.sh
-exec_always --no-startup-id sh ./idle.sh  
-exec_always --no-startup-id dex --autostart --environment i3
-exec_always --no-startup-id nm-applet
+exec_always --no-startup-id "sh $HOME/.fehbg &"
+exec_always --no-startup-id "sh $HOME/.config/polybar/launch.sh"
+exec_always --no-startup-id "sh ./idle.sh"  
 
+bindsym XF86AudioRaiseVolume 	exec --no-startup-id "$HOME/box/dotfiles/os/i3/scripts/vol_up.sh"
+bindsym XF86AudioLowerVolume 	exec --no-startup-id "$HOME/box/dotfiles/os/i3/scripts/vol_down.sh"
+bindsym XF86AudioMute 		    exec --no-startup-id "$HOME/box/dotfiles/os/i3/scripts/vol_mute.sh"
 
-bindsym XF86AudioRaiseVolume 	exec --no-startup-id "amixer set Master -q 5%+"
-bindsym XF86AudioLowerVolume 	exec --no-startup-id "amixer set Master -q 5%-"
-bindsym XF86AudioMute 		exec --no-startup-id "amixer -q sset Master,0 toggle"
+bindsym XF86MonBrightnessUp 	exec --no-startup-id "brightnessctl set +10%"
+bindsym XF86MonBrightnessDown	exec --no-startup-id "brightnessctl set 10%-"
 
-bindsym XF86MonBrightnessUp 	exec --no-startup-id brightnessctl set +10%
-bindsym XF86MonBrightnessDown 	exec --no-startup-id brightnessctl set 10%-
-
-bindsym XF86KbdBrightnessUp     exec --no-startup-id brightnessctl --device=asus::kbd_backlight set +33%
-bindsym XF86KbdBrightnessDown   exec --no-startup-id brightnessctl --device=asus::kbd_backlight set 33%-
+bindsym XF86KbdBrightnessUp   exec --no-startup-id "brightnessctl --device=asus::kbd_backlight set +33%"
+bindsym XF86KbdBrightnessDown exec --no-startup-id "brightnessctl --device=asus::kbd_backlight set 33%-"
 
 assign [class="^Alacritty$"] → "1:I"
 assign [class="^firefox$"] → "2:II"

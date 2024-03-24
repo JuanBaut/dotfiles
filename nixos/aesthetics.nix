@@ -16,7 +16,7 @@ in {
     home.pointerCursor = {
       name = "macOS-Monterey";
       package = pkgs.apple-cursor;
-      size = 32;
+      size = 36;
     };
 
     gtk = {
@@ -50,11 +50,14 @@ in {
 
   services.picom = {
     enable = true;
+    vSync = true;
+    backend = "glx";
     shadow = true;
     fade = true;
-    fadeDelta = 6;
+    fadeDelta = 3;
     inactiveOpacity = 0.6;
-    settings = { corner-radius = 6; };
+    opacityRules = [ "100:class_g *?= 'rofi'" "100:class_g *?= 'firefox'" ];
+    settings = { corner-radius = 12; };
   };
 
   fonts.packages = with pkgs; [

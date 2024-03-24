@@ -23,11 +23,9 @@ else
   export EDITOR='nvim'
 fi
 
-ALACRITTY="/mnt/c/Users/dagger/AppData/Roaming/alacritty"
-
 # Aliases
-alias c="clear"
-alias f='cd $(fd --type d --hidden --exclude .git --exclude node_module --exclude .cache --exclude .npm --exclude .mozilla --exclude .meteor --exclude .nv --max-depth 3 | fzf)'
+alias c="clear -x"
+alias f='cd $(fd --type d --exclude .git --exclude node_module --exclude .cache --exclude .npm --exclude .mozilla --exclude .meteor --exclude .nv | fzf)'
 alias dev='cd ~/dev && cd $(fd --type d --hidden --exclude .git --exclude node_module --exclude .cache --exclude .npm --exclude .mozilla --exclude .meteor --exclude .nv --max-depth 1 | fzf)'
 alias box='cd ~/box && cd $(fd --type d --hidden --exclude .git --exclude node_module --exclude .cache --exclude .npm --exclude .mozilla --exclude .meteor --exclude .nv --max-depth 1 | fzf)'
 alias nv="nvim"
@@ -38,13 +36,9 @@ alias set-zsh="source ~/.zshrc"
 alias config-tmux="$EDITOR ~/.tmux.conf"
 alias set-tmux="tmux source ~/.tmux.conf"
 
-alias config-alacritty="$EDITOR $HOME/box/dotfiles/alacritty/alacritty.toml"
-alias set-alacritty="rm $ALACRITTY/alacritty.toml && cp $HOME/box/dotfiles/alacritty/alacritty.toml $ALACRITTY"
-alias theme-alacritty="set-alacritty && cp $HOME/box/dotfiles/alacritty/theme.yml $ALACRITTY"
-
 alias inpsql="sudo -u postgres psql"
-alias fetchneo="neofetch --ascii $HOME/box/dotfiles/reaper.txt"
-alias fetchfast="fastfetch --logo-color-1 blue --file $HOME/box/dotfiles/reaper.txt"
+alias nf="neofetch --ascii $HOME/box/dotfiles/reaper.txt"
+alias ff="fastfetch --logo-color-1 blue --file $HOME/box/dotfiles/reaper.txt"
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
@@ -54,10 +48,5 @@ zstyle ':omz:update' mode auto
 
 # oh-my-zsh place 
 source $ZSH/oh-my-zsh.sh
-
-# Nvm
-export NVM_DIR="$HOME/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
-[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
 # --> --> --> dagger's zsh commands <-- <-- <--

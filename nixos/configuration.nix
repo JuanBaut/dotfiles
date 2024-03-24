@@ -78,8 +78,6 @@
 
   programs = {
     nm-applet.enable = true;
-    i3lock.enable = true;
-    i3lock.package = pkgs.i3lock-color;
     gnupg.agent.enable = true;
     gnupg.agent.enableSSHSupport = true;
     dconf.enable = true;
