@@ -5,6 +5,9 @@ import = [
 [env]
 TERM = "xterm-256color"
 
+[shell]
+program = "tmux"
+
 [font]
 size = 13
 
