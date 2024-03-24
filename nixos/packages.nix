@@ -15,7 +15,6 @@ in {
     zsh
     fd
 
-    home-manager
     imagemagick
     playerctl
     xidlehook
@@ -25,7 +24,6 @@ in {
     pavucontrol
     polybarFull
     libnotify
-    picom
     dunst
     xclip
     xsel

@@ -9,13 +9,15 @@ in {
   home-manager.backupFileExtension = "backup";
 
   home-manager.users.dagger = { pkgs, ... }: {
+    programs.home-manager.enable = true;
     home.stateVersion = "23.11";
+    fonts.fontconfig.enable = true;
+
     home.pointerCursor = {
       name = "macOS-Monterey";
       package = pkgs.apple-cursor;
       size = 32;
     };
-    fonts.fontconfig.enable = true;
 
     gtk = {
       enable = true;
@@ -44,6 +46,15 @@ in {
       userEmail = "deserd@protonmail.com";
       userName = "JuanBaut";
     };
+  };
+
+  services.picom = {
+    enable = true;
+    shadow = true;
+    fade = true;
+    fadeDelta = 6;
+    inactiveOpacity = 0.6;
+    settings = { corner-radius = 6; };
   };
 
   fonts.packages = with pkgs; [
