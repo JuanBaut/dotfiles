@@ -16,7 +16,7 @@ in {
     home.pointerCursor = {
       name = "macOS-Monterey";
       package = pkgs.apple-cursor;
-      size = 36;
+      size = 32;
     };
 
     gtk = {
@@ -36,16 +36,23 @@ in {
       };
     };
 
-    qt = {
-      enable = true;
-      platformTheme = "gtk3";
-    };
-
     programs.git = {
       enable = true;
       userEmail = "deserd@protonmail.com";
       userName = "JuanBaut";
     };
+  };
+
+  qt = {
+    enable = true;
+    style = "gtk2";
+    platformTheme = "gtk2";
+  };
+
+  environment.variables = {
+    PLASMA_USE_QT_SCALING = 1;
+    #QT_AUTO_SCREEN_SCALE_FACTOR = 0;
+    #QT_SCREEN_SCALE_FACTORS = 1;
   };
 
   services.picom = {
@@ -55,9 +62,16 @@ in {
     shadow = true;
     fade = true;
     fadeDelta = 3;
-    inactiveOpacity = 0.6;
+    inactiveOpacity = 0.8;
     opacityRules = [ "100:class_g *?= 'rofi'" "100:class_g *?= 'firefox'" ];
-    settings = { corner-radius = 12; };
+    settings = {
+      corner-radius = 12;
+      blur = {
+        method = "dual_kawase";
+        size = 10;
+        deviation = 5.0;
+      };
+    };
   };
 
   fonts.packages = with pkgs; [
