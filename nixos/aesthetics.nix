@@ -49,12 +49,6 @@ in {
     platformTheme = "gtk2";
   };
 
-  environment.variables = {
-    PLASMA_USE_QT_SCALING = 1;
-    #QT_AUTO_SCREEN_SCALE_FACTOR = 0;
-    #QT_SCREEN_SCALE_FACTORS = 1;
-  };
-
   services.picom = {
     enable = true;
     vSync = true;
@@ -63,6 +57,7 @@ in {
     fade = true;
     fadeDelta = 3;
     inactiveOpacity = 0.8;
+    shadowExclude = [ "class_g *?= 'polybar'" ];
     opacityRules = [ "100:class_g *?= 'rofi'" "100:class_g *?= 'firefox'" ];
     settings = {
       corner-radius = 12;

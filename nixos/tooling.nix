@@ -11,7 +11,6 @@ in {
     tailwindcss-language-server
     typescript
 
-    #vimPlugins.nvim-treesitter
     sumneko-lua-language-server
     stylua
     lua

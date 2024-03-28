@@ -32,8 +32,6 @@ in {
     rofi
     feh
 
-    libsForQt5.qtstyleplugins
-    libsForQt5.gwenview
     xfce.ristretto
     xfce.tumbler
     xfce.thunar
