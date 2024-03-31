@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-brightnessctl --device=asus::kbd_backlight set +33%
+brightnessctl -q --device=asus::kbd_backlight set +33%
 
 brightness="$(brightnessctl --device=asus::kbd_backlight get)"
 

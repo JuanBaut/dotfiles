@@ -35,10 +35,10 @@ set $base      #202020
 set $mantle    #202020
 set $crust     #303030
 
-# target                 title     bg    text   indicator  border
-client.focused           $white	   $base $text  $white	   $white
-client.focused_inactive  $overlay0 $base $text  $crust     $overlay0
-client.unfocused         $overlay0 $base $text  $crust     $overlay0
-client.urgent            $peach    $base $text  $overlay0  $white
-client.placeholder       $overlay0 $base $text  $overlay0  $overlay0
+# target                 title      bg      text      indicator      border
+client.focused           $base	    $base   $text     $base  	       $base
+client.focused_inactive  $base      $base   $text     $base          $base
+client.unfocused         $base      $base   $text     $base          $base
+client.urgent            $overlay2  $base   $base     $base          $base
+client.placeholder       $base      $base   $text     $base          $base
 client.background        $base

@@ -20,6 +20,7 @@ in {
     imagemagick
     playerctl
     xidlehook
+    xss-lock
     scrot
 
     brightnessctl
