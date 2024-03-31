@@ -6,8 +6,10 @@ in {
     unstable.nodejs_21
     nodePackages_latest.prettier
     nodePackages_latest.eslint
+    unstable.eslint_d
     nodePackages_latest.vscode-html-languageserver-bin
     nodePackages_latest.vscode-css-languageserver-bin
+    nodePackages_latest.typescript-language-server
     tailwindcss-language-server
     typescript
 
