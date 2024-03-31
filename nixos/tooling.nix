@@ -4,13 +4,12 @@ in {
   environment.systemPackages = with pkgs; [
     unstable.bun
     unstable.nodejs_21
-    nodePackages_latest.prettier
-    nodePackages_latest.eslint
     unstable.eslint_d
-    nodePackages_latest.vscode-html-languageserver-bin
-    nodePackages_latest.vscode-css-languageserver-bin
-    nodePackages_latest.typescript-language-server
+    nodePackages_latest.eslint
+    nodePackages_latest.prettier
+    vscode-langservers-extracted
     tailwindcss-language-server
+    nodePackages_latest.typescript-language-server
     typescript
 
     sumneko-lua-language-server
