@@ -16,7 +16,7 @@ in {
     home.pointerCursor = {
       name = "macOS-Monterey";
       package = pkgs.apple-cursor;
-      size = 32;
+      size = 40;
     };
 
     gtk = {
