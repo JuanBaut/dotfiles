@@ -12,11 +12,11 @@ thm_black="#ffffff"
 thm_gray="#505050"
 thm_orange="#A0A0A0"
 thm_green="#A0A0A0"
+thm_red="#ffffff"
 
 thm_black4="#acb0be"
 
 thm_magenta="#ea76cb"
 thm_pink="#8839ef"
-thm_red="#d05050"
 thm_yellow="#df8e1d"
 thm_blue="#1e66f5"
