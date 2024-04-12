@@ -53,6 +53,11 @@
     displayManager.sddm.theme = "where_is_my_sddm_theme";
     windowManager.i3.enable = true;
     windowManager.i3.package = pkgs.i3-gaps;
+
+    libinput.enable = true;
+    synaptics.enable = false;
+    libinput.touchpad.naturalScrolling = true;
+    synaptics.buttonsMap = [ 1 1 1 ];
   };
 
   sound.enable = true;

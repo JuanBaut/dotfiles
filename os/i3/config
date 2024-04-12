@@ -9,7 +9,8 @@ gaps outer 0
 
 exec_always --no-startup-id "$HOME/.fehbg &"
 exec_always --no-startup-id "$HOME/.config/polybar/launch.sh"
-exec_always --no-startup-id "xset +dpms dpms 0 300 300" 
+exec_always --no-startup-id "xset r rate 575 30" 
+exec_always --no-startup-id "xset dpms 0 0 60" 
 exec_always --no-startup-id "xss-lock --transfer-sleep-lock -- $HOME/.config/i3/scripts/lock.sh"
 #exec_always --no-startup-id "$HOME/.config/i3/scripts/idle.sh"  
 

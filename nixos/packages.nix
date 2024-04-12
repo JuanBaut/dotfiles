@@ -7,9 +7,11 @@ in {
     fastfetch
     neofetch
     cbonsai
+    ripgrep
     unzip
     btop
     tmux
+    wget
     git
     eza
     fzf
@@ -19,7 +21,6 @@ in {
     i3lock-color
     imagemagick
     playerctl
-    xidlehook
     xss-lock
     scrot
 

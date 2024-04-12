@@ -1,11 +1,11 @@
-#!/usr/bin/env sh
+#!/usr/bin/env bash
 
 keyboard="$(brightnessctl --device=asus::kbd_backlight get)"
 screen="$(brightnessctl get)"
 
 dunstctl set-paused true
 brightnessctl -q --device=asus::kbd_backlight set 0
-brightnessctl -q set 10%
+brightnessctl -q set 5%
 
 i3lock-color -n -k --color=000000 --time-color=ffffff --date-color=ffffff \
     --ind-pos="x+45:y+1025" --time-pos="x+100:y+55" --radius=15 --wrong-text="" \
