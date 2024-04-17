@@ -16,6 +16,7 @@ in {
     stylua
     lua
 
+    python3
     nodePackages_latest.pyright
     black
     mypy
