@@ -5,6 +5,7 @@ in {
     unstable.bun
     unstable.nodejs_21
     unstable.eslint_d
+    unstable.prettierd
     nodePackages_latest.eslint
     nodePackages_latest.prettier
     vscode-langservers-extracted

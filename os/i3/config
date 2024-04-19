@@ -12,7 +12,7 @@ exec_always --no-startup-id "$HOME/.config/polybar/launch.sh"
 exec_always --no-startup-id "xset r rate 575 30" 
 exec_always --no-startup-id "xset dpms 0 0 60" 
 exec_always --no-startup-id "xss-lock --transfer-sleep-lock -- $HOME/.config/i3/scripts/lock.sh"
-#exec_always --no-startup-id "$HOME/.config/i3/scripts/idle.sh"  
+#exec_always --no-startup-id "$HOME/.config/i3/scripts/idle.sh"
 
 bindsym XF86AudioRaiseVolume 	exec --no-startup-id "$HOME/.config/i3/scripts/vol_up.sh"
 bindsym XF86AudioLowerVolume 	exec --no-startup-id "$HOME/.config/i3/scripts/vol_down.sh"
@@ -28,11 +28,16 @@ bindsym $mod+d exec --no-startup-id "playerctl next"
 bindsym $mod+s exec --no-startup-id "playerctl previous"
 bindsym $mod+a exec --no-startup-id "playerctl play-pause"
 
-assign [class="^Alacritty$"] → "1:I"
-assign [class="^firefox$"] → "2:II"
+assign [class="^Alacritty$"] →            $ws1
+assign [class="^firefox$"] →              $ws2
+assign [class="^Chromium-browser$"] →     $ws3
+assign [class="^Spotify$"] →              $ws4
 
 bindsym $mod+q kill
+
 bindsym $mod+Return exec alacritty 
+bindsym $mod+p exec --no-startup-id "alacritty && spotify && chromium-browser && firefox"
+
 bindsym $mod+space exec rofi -show drun
 bindsym $mod+Control+l exec "$HOME/.config/i3/scripts/lock.sh" 
 floating_modifier Mod1
