@@ -57,7 +57,6 @@
     libinput.enable = true;
     synaptics.enable = false;
     libinput.touchpad.naturalScrolling = true;
-    synaptics.buttonsMap = [ 1 1 1 ];
   };
 
   sound.enable = true;

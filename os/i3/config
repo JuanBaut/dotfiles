@@ -10,16 +10,16 @@ gaps outer 0
 exec_always --no-startup-id "$HOME/.fehbg &"
 exec_always --no-startup-id "$HOME/.config/polybar/launch.sh"
 exec_always --no-startup-id "xset r rate 575 30"
-exec_always --no-startup-id "xset dpms 0 0 60"
+exec_always --no-startup-id "xset dpms 0 0 100"
 exec_always --no-startup-id "xss-lock --transfer-sleep-lock -- $HOME/.config/i3/scripts/lock/lock.sh"
 #exec_always --no-startup-id "$HOME/.config/i3/scripts/idle.sh"
 
-bindsym XF86AudioRaiseVolume 	exec --no-startup-id "$HOME/.config/i3/scripts/volume/vol_up.sh"
-bindsym XF86AudioLowerVolume 	exec --no-startup-id "$HOME/.config/i3/scripts/volume/vol_down.sh"
-bindsym XF86AudioMute 		    exec --no-startup-id "$HOME/.config/i3/scripts/volume/vol_mute.sh"
+bindsym XF86AudioRaiseVolume  exec --no-startup-id "$HOME/.config/i3/scripts/volume/vol_up.sh"
+bindsym XF86AudioLowerVolume  exec --no-startup-id "$HOME/.config/i3/scripts/volume/vol_down.sh"
+bindsym XF86AudioMute         exec --no-startup-id "$HOME/.config/i3/scripts/volume/vol_mute.sh"
 
-bindsym XF86MonBrightnessUp 	exec --no-startup-id "$HOME/.config/i3/scripts/brightness/scr_brightness_up.sh"
-bindsym XF86MonBrightnessDown	exec --no-startup-id "$HOME/.config/i3/scripts/brightness/scr_brightness_down.sh"
+bindsym XF86MonBrightnessUp   exec --no-startup-id "$HOME/.config/i3/scripts/brightness/scr_brightness_up.sh"
+bindsym XF86MonBrightnessDown exec --no-startup-id "$HOME/.config/i3/scripts/brightness/scr_brightness_down.sh"
 
 bindsym XF86KbdBrightnessUp   exec --no-startup-id "$HOME/.config/i3/scripts/brightness/kbd_brightness_up.sh"
 bindsym XF86KbdBrightnessDown exec --no-startup-id "$HOME/.config/i3/scripts/brightness/kbd_brightness_down.sh"
@@ -29,15 +29,15 @@ bindsym $mod+s exec --no-startup-id "playerctl previous"
 bindsym $mod+a exec --no-startup-id "playerctl play-pause"
 
 bindsym $mod+p exec --no-startup-id "$HOME/.config/i3/scripts/startup.sh"
-assign [class="^Alacritty$"] →            $ws1
-assign [class="^firefox$"] →              $ws2
-assign [class="^Chromium-browser$"] →     $ws3
-assign [class="^Spotify$"] →              $ws4
+assign [class="^Chromium-browser$"]   →  $ws3
+assign [class="^Alacritty$"]          →  sws1
+assign [class="^firefox$"]            →  $ws2
+assign [class="^Spotify$"]            →  $ws4
 
 bindsym $mod+q kill
 bindsym $mod+Return exec alacritty 
 bindsym $mod+space exec rofi -show drun
-bindsym $mod+Control+l exec "$HOME/.config/i3/scripts/lock.sh" 
+bindsym $mod+Control+l exec "$HOME/.config/i3/scripts/lock/lock.sh" 
 floating_modifier Mod1
 
 # change focus

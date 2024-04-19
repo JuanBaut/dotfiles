@@ -6,4 +6,4 @@ brightness="$(brightnessctl get)"
 
 percentage=$((brightness * 100 / 19200))
 
-dunstify "Brightness" "$percentage%" -u low -r 798 -h int:value:"$percentage"
+dunstify "Brightness" "$percentage%" -u low -t 1000 -r 798 -h int:value:"$percentage"

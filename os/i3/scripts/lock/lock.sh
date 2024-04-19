@@ -7,12 +7,7 @@ dunstctl set-paused true
 brightnessctl -q --device=asus::kbd_backlight set 0
 brightnessctl -q set 5%
 
-i3lock-color -n -k --color=000000 --time-color=ffffff --date-color=ffffff \
-    --ind-pos="x+45:y+1025" --time-pos="x+100:y+55" --radius=15 --wrong-text="" \
-    --verif-text="" --noinput-text="" --ring-color=202020 --insidever-color=000000 \
-    --insidewrong-color=000000 --ringver-color=ffffff --ringwrong-color=920914 \
-    --bshl-color=920914 --keyhl-color=ffffff \
-    --time-font="Geist Mono Nerd Font" --date-font="Geist Mono Nerd Font"
+sh "$HOME/.config/i3/scripts/lock/i3-lock.sh"
 
 brightnessctl -q --device=asus::kbd_backlight set "$keyboard"
 brightnessctl -q set "$screen"
