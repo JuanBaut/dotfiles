@@ -1,16 +1,16 @@
 [global]
-frame_color = "#89B4FA"
-separator_color= frame
+font = GeistMono Nerd Font Propo 10
+origin = top-right
 
-[urgency_low]
-background = "#1E1E2E"
-foreground = "#CDD6F4"
+progress_bar = true
+progress_bar_height = 6
+progress_bar_corner_radius = 6
 
-[urgency_normal]
-background = "#1E1E2E"
-foreground = "#CDD6F4"
+frame_color = "#ffffff"
+separator_color = frame
+corner_radius = 6
+frame_width = 2
 
-[urgency_critical]
-background = "#1E1E2E"
-foreground = "#CDD6F4"
-frame_color = "#FAB387"
+background = "#202020"
+foreground = "#ffffff"
+highlight = "#ffffff"
