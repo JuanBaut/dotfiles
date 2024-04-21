@@ -10,9 +10,7 @@ gaps outer 0
 exec_always --no-startup-id "$HOME/.fehbg &"
 exec_always --no-startup-id "$HOME/.config/polybar/launch.sh"
 exec_always --no-startup-id "xset r rate 575 30"
-exec_always --no-startup-id "xset dpms 0 0 100"
-exec_always --no-startup-id "xss-lock --transfer-sleep-lock -- $HOME/.config/i3/scripts/lock/lock.sh"
-#exec_always --no-startup-id "$HOME/.config/i3/scripts/idle.sh"
+exec_always --no-startup-id "$HOME/.config/i3/scripts/idle/xidlehook.sh"
 
 bindsym XF86AudioRaiseVolume  exec --no-startup-id "$HOME/.config/i3/scripts/volume/vol_up.sh"
 bindsym XF86AudioLowerVolume  exec --no-startup-id "$HOME/.config/i3/scripts/volume/vol_down.sh"
@@ -29,9 +27,9 @@ bindsym $mod+s exec --no-startup-id "playerctl previous"
 bindsym $mod+a exec --no-startup-id "playerctl play-pause"
 
 bindsym $mod+p exec --no-startup-id "$HOME/.config/i3/scripts/startup.sh"
-assign [class="^Chromium-browser$"]   →  $ws3
-assign [class="^Alacritty$"]          →  sws1
+assign [class="^Alacritty$"]          →  $ws1
 assign [class="^firefox$"]            →  $ws2
+assign [class="^Chromium-browser$"]   →  $ws3
 assign [class="^Spotify$"]            →  $ws4
 
 bindsym $mod+q kill

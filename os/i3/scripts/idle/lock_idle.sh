@@ -1,14 +1,5 @@
 #!/usr/bin/env bash
 
-pre() {
-    keyboard_brightness="$(brightnessctl --device=asus::kbd_backlight get)"
-    screen_brightness="$(brightnessctl get)"
-
-    dunstctl set-paused true
-    brightnessctl -q --device=asus::kbd_backlight set 0
-    brightnessctl -q set 5%
-}
-
 locking() {
     i3lock-color -n -k \
         --color=000000 \
@@ -35,16 +26,4 @@ locking() {
         --date-font="Geist Mono Nerd Font"
 }
 
-post() {
-    brightnessctl -q --device=asus::kbd_backlight set "$keyboard_brightness"
-    brightnessctl -q set "$screen_brightness"
-    dunstctl set-paused false
-}
-
-main() {
-    pre
-    locking
-    post
-}
-
-main
+locking

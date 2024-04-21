@@ -1,9 +1,9 @@
-{ pkgs, ... }:
-let unstable = import <nixos-unstable> { };
+{ pkgs, lib, ... }:
+let unstable = import <nixos-unstable> {};
 in {
   environment.systemPackages = with pkgs; [
     unstable.alacritty
-    keepassxc
+    unstable.keepassxc
     fastfetch
     neofetch
     cbonsai
@@ -12,6 +12,7 @@ in {
     btop
     tmux
     wget
+    tldr
     git
     eza
     fzf
@@ -21,7 +22,7 @@ in {
     i3lock-color
     imagemagick
     playerctl
-    xss-lock
+    xidlehook
     scrot
 
     brightnessctl
