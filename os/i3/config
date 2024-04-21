@@ -25,6 +25,7 @@ bindsym XF86KbdBrightnessDown exec --no-startup-id "$HOME/.config/i3/scripts/bri
 bindsym $mod+d exec --no-startup-id "playerctl next"
 bindsym $mod+s exec --no-startup-id "playerctl previous"
 bindsym $mod+a exec --no-startup-id "playerctl play-pause"
+bindsym $mod+y exec --no-startup-id "scrot ~/Pictures/%Y-%m-%d-%H-%M-%S.png"
 
 bindsym $mod+p exec --no-startup-id "$HOME/.config/i3/scripts/startup.sh"
 assign [class="^Alacritty$"]          →  $ws1
