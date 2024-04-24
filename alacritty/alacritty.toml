@@ -6,10 +6,11 @@ import = [
 TERM = "xterm-256color"
 
 [font]
-size = 13
+size = 14
 
 [font.normal]
-family = "GeistMono Nerd Font Propo"
+family = "ZedMono Nerd Font"
+#family = "Lilex Nerd Font"
 
 [window]
 title = "Alacritty"

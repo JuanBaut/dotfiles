@@ -10,7 +10,7 @@
     grey: #909090;
 
     width: 500;
-    font: "GeistMono Nerd Font Propo 16";
+    font: "ZedMono Nerd Font Propo 18";
 }
 
 element-text, element-icon , mode-switcher {

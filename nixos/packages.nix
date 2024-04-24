@@ -1,5 +1,9 @@
 { pkgs, lib, ... }:
-let unstable = import <nixos-unstable> {};
+let
+  unstable = import <nixos-unstable> {
+    config.allowUnfreePredicate = pkg:
+      builtins.elem (lib.getName pkg) [ "spotify" ];
+  };
 in {
   environment.systemPackages = with pkgs; [
     unstable.alacritty
@@ -40,7 +44,8 @@ in {
     xfce.thunar
 
     ungoogled-chromium
+    unstable.spicetify-cli
+    unstable.spotify
     discord
-    spotify
   ];
 }

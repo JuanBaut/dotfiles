@@ -12,8 +12,7 @@ pre_idle() {
     # This is the most convenient way I found
     # for waking up the keyboard so the brightness
     # actually changes when the device is asleep
-    xset led named "Scroll Lock"; sleep 0.1
-
+    xset led named "Scroll Lock"
     dunstctl set-paused true
     brightnessctl -q --device=asus::kbd_backlight set 0
     brightnessctl -q set 5%

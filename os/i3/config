@@ -1,7 +1,7 @@
 include theme
 
 set $mod Mod4
-font pango:GeistMono NFP 10
+font pango:ZedMono NFP 10
 
 default_border pixel 0
 gaps inner 8

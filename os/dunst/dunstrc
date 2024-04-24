@@ -1,5 +1,5 @@
 [global]
-font = GeistMono Nerd Font Propo 10
+font = ZedMono Nerd Font Propo 12
 origin = top-right
 
 progress_bar = true
