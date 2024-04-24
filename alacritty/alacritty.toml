@@ -18,4 +18,4 @@ dynamic_padding = true
 
 [window.padding]
 x = 4
-y = 2
+y = 4
