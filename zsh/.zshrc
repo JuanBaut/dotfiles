@@ -110,6 +110,7 @@ alias nv="nvim"
 alias f=". $SEARCH/search.sh"
 alias dev=". $SEARCH/dev_search.sh"
 alias box=". $SEARCH/box_search.sh"
+alias u-nixos="sudo nixos-rebuild switch --flake '$HOME/box/nixos#default'"
 
 alias config-zsh="$EDITOR ~/.zshrc"
 alias config-tmux="$EDITOR ~/.tmux.conf"
