@@ -28,10 +28,12 @@ bindsym $mod+a exec --no-startup-id "playerctl play-pause"
 bindsym $mod+y exec --no-startup-id "scrot ~/Pictures/%Y-%m-%d-%H-%M-%S.png"
 
 bindsym $mod+p exec --no-startup-id "$HOME/.config/i3/scripts/startup.sh"
-assign [class="^Alacritty$"]          →  $ws1
-assign [class="^firefox$"]            →  $ws2
-assign [class="^Chromium-browser$"]   →  $ws3
-assign [class="^Spotify$"]            →  $ws4
+assign [class="Alacritty"]         →  $ws1
+assign [class="neovide"]           →  $ws1
+
+assign [class="firefox"]           →  $ws2
+assign [class="Chromium-browser"]  →  $ws3
+assign [class="Spotify"]           →  $ws4
 
 bindsym $mod+q kill
 bindsym $mod+Return exec alacritty 

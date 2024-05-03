@@ -13,7 +13,7 @@ set $sky       	#89dceb
 set $sapphire  	#74c7ec
 set $blue      	#89b4fa
 set $lavender  	#b4befe
-set $white	#ffffff
+set $white	    #ffffff
 
 # greyscale
 
@@ -31,14 +31,17 @@ set $surface2  #585b70
 set $surface1  #45475a
 set $surface0  #313244
 
-set $base      #202020
+set $black     #000000
+set $base      #101010
 set $mantle    #202020
 set $crust     #303030
 
-# target                 title      bg      text      indicator      border
-client.focused           $base	    $base   $text     $base  	       $base
-client.focused_inactive  $base      $base   $text     $base          $base
-client.unfocused         $base      $base   $text     $base          $base
-client.urgent            $overlay2  $base   $base     $base          $base
-client.placeholder       $base      $base   $text     $base          $base
-client.background        $base
+# target                 title          bg           text         indicator      border
+client.focused           $base          $mantle      $text        $base          $base
+client.focused_inactive  $base          $base        $text        $base          $base
+client.unfocused         $base          $base        $overlay2    $base          $base
+client.urgent            $overlay2      $base        $base        $base          $base
+client.placeholder       $base          $base        $text        $base          $base
+client.background        $base          $base        $text        $base          $base 
+
+for_window [class=".*"] title_format "<b>  %title</b>"
