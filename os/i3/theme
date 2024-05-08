@@ -37,7 +37,7 @@ set $mantle    #202020
 set $crust     #303030
 
 # target                 title          bg           text         indicator      border
-client.focused           $base          $mantle      $text        $base          $base
+client.focused           $base          $mantle      $text        $mantle        $mantle
 client.focused_inactive  $base          $base        $text        $base          $base
 client.unfocused         $base          $base        $overlay2    $base          $base
 client.urgent            $overlay2      $base        $base        $base          $base
