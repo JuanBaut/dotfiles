@@ -5,9 +5,9 @@ if ! pgrep alacritty > /dev/null; then
     alacritty &
 fi
 
-# Check if firefox-devedition is running
-if ! pgrep firefox-devedition > /dev/null; then
-    firefox-devedition &
+# Check if chromium is running
+if ! pgrep chromium > /dev/null; then
+    chromium &
 fi
 
 # Check if firefox is running
