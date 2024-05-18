@@ -11,9 +11,9 @@ size = 12.5
 [font.normal]
 #family = "ZedMono Nerd Font"
 #family = "Lilex Nerd Font"
-family = "GeistMono Nerd Font"
-#family = "RecMonoSmCasual Nerd Font"
-#family = "JetBrainsMono Nerd Font"
+#family = "GeistMono Nerd Font"
+#family = "RecMonoLinear Nerd Font"
+family = "JetBrainsMono Nerd Font"
 
 [window]
 title = "Alacritty"
