@@ -31,8 +31,8 @@ locking() {
         --ringwrong-color=920914 \
         --bshl-color=920914 \
         --keyhl-color=ffffff \
-        --time-font="Geist Mono Nerd Font" \
-        --date-font="Geist Mono Nerd Font"
+        --time-font="ZedMono Nerd Font" \
+        --date-font="ZedMono Nerd Font"
 }
 
 post() {

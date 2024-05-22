@@ -7,13 +7,14 @@ TERM = "xterm-256color"
 
 [font]
 size = 12.5
+offset = { y = 3 }
 
 [font.normal]
+family = "RecMonoLinear Nerd Font" #uncomment offset too
 #family = "ZedMono Nerd Font"
 #family = "Lilex Nerd Font"
 #family = "GeistMono Nerd Font"
-#family = "RecMonoLinear Nerd Font"
-family = "JetBrainsMono Nerd Font"
+#family = "JetBrainsMono Nerd Font"
 
 [window]
 title = "Alacritty"
