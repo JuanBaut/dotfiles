@@ -1,5 +1,6 @@
 import = [
-"~/.config/alacritty/theme.toml"
+"~/.config/alacritty/theme.toml",
+"~/.config/alacritty/keybinds.toml"
 ]
 
 [env]
