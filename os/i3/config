@@ -34,6 +34,7 @@ assign [class="neovide"]           →  $ws1
 assign [class="firefox"]           →  $ws2
 assign [class="Chromium-browser"]  →  $ws3
 assign [class="Spotify"]           →  $ws4
+assign [class="discord"]           →  $ws4
 
 bindsym $mod+q kill
 bindsym $mod+Return exec alacritty 

@@ -115,11 +115,15 @@ alias u-nixos="sudo nixos-rebuild switch --flake '$HOME/box/nixos#default'"
 alias config-zsh="$EDITOR ~/.zshrc"
 alias config-tmux="$EDITOR ~/.tmux.conf"
 
-alias nf="neofetch --ascii $HOME/box/dotfiles/reaper.txt"
 alias ff="fastfetch --logo-color-1 blue --file $HOME/box/dotfiles/reaper.txt"
 
-# Add flags to existing aliases.
-alias ls="${aliases[ls]:-ls} -A"
+#remaps
+bindkey -r '^F'
+bindkey -r '^B'
+
+bindkey '^L' forward-char
+bindkey '^H' backward-char
+bindkey '^B' backward-delete-char
 
 # Set shell options: http://zsh.sourceforge.net/Doc/Release/Options.html.
 setopt glob_dots     # no special treatment for file names with a leading dot
