@@ -99,8 +99,13 @@ else
   export EDITOR='nvim'
 fi
 
-# FZF theme and script path
-export FZF_DEFAULT_OPTS=$FZF_DEFAULT_OPTS' --color=fg:#d0d0d0,bg:#101010,hl:#9ece6a --color=fg+:#d0d0d0,bg+:#202020,hl+:#ad8ee6 --color=info:#787c99,prompt:#ad8ee6,pointer:#ad8ee6 --color=marker:#9ece6a,spinner:#ad8ee6,header:#787c99'
+export FZF_DEFAULT_OPTS=$FZF_DEFAULT_OPTS'
+  --color=fg:#737aa2,fg+:#c0caf5,bg:-1,bg+:#101010
+  --color=hl:#2ac3de,hl+:#2ac3de,info:#7dcfff,marker:#2ac3de
+  --color=prompt:#2ac3de,spinner:#2ac3de,pointer:#2ac3de,header:#565f89
+  --color=border:#27a1b9,query:#c0caf5
+  --marker=":" --pointer=">"'
+
 SEARCH="$HOME/box/dotfiles/fzf"
 
 # Define aliases.
