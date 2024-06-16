@@ -1,0 +1,20 @@
+// My Custom waybar configuration
+[
+  {
+    "layer": "bottom",
+    "position": "top",
+    "spacing": 6,
+    "exclusive": true,
+    "fixed-center": true,
+    "modules-left": ["hyprland/workspaces", "group/end-left-module"],
+    "modules-right": [
+      "group/systray",
+      "group/end-right-module",
+      "custom/power",
+    ],
+    "include": [
+      "~/.config/waybar/modules/modules.jsonc",
+      "~/.config/waybar/modules/groups.jsonc",
+    ],
+  },
+]

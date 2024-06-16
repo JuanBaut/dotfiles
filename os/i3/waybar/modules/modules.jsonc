@@ -1,0 +1,92 @@
+{
+  // Media Player
+  "custom/media": {
+    "format": "{}",
+    "on-click-middle": "playerctl play-pause",
+    "on-click": "playerctl previous",
+    "on-click-right": "playerctl next",
+    "return-type": "json",
+    "max-length": 40,
+    "escape": true,
+    "exec": "$HOME/.config/waybar/scripts/mediaplayer.py 2> /dev/null", // Script in resources folder
+  },
+
+  // Workspaces
+  "hyprland/workspaces": {
+    "active-only": false,
+    "format": "{name}",
+  },
+
+  // Clock
+  "clock": {
+    "format": "{:%I:%M %p}",
+    "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
+    "format-alt": "{:%Y-%m-%d}",
+  },
+
+  // Battery
+  "battery": {
+    "states": {
+      "warning": 30,
+      "critical": 15,
+    },
+    "format": "{capacity}% {icon}",
+    "format-full": "{capacity}% {icon}",
+    "format-charging": "{capacity}% ",
+    "format-plugged": "{capacity}% ",
+    "format-alt": "{time} {icon}",
+    "format-icons": ["", "", "", "", ""],
+  },
+
+  // Power Profiles Daemon
+  "power-profiles-daemon": {
+    "format": "{icon}",
+    "tooltip-format": "Power profile: {profile}\nDriver: {driver}",
+    "tooltip": true,
+    "format-icons": {
+      "default": "",
+      "performance": "",
+      "balanced": "",
+      "power-saver": "",
+    },
+  },
+
+  // Power Button
+  "custom/power": {
+    "format": "&#x23FB;",
+    "tooltip": false,
+    "on-click": "wlogout",
+  },
+
+  // Audio Information
+  "pulseaudio": {
+    "format": "{volume}% {icon} ",
+    "format-bluetooth": "{volume}% {icon} ",
+    "format-bluetooth-muted": " {icon}  ",
+    "format-muted": " {format_source}",
+    "format-source": "{volume}% ",
+    "format-source-muted": "",
+    "format-icons": {
+      "headphone": "",
+      "hands-free": "",
+      "headset": "",
+      "phone": "",
+      "portable": "",
+      "car": "",
+      "default": ["", "", ""],
+    },
+    "on-click": "pavucontrol",
+  },
+
+  // Brightness Information
+  "backlight": {
+    "format": "{percent}% {icon}",
+    "format-icons": ["", "", "", "", "", "", "", "", ""],
+  },
+
+  // System Tray
+  "tray": {
+    "icon-size": 18,
+    "spacing": 5,
+  },
+}

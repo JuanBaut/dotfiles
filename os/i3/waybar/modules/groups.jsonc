@@ -1,0 +1,14 @@
+{
+  "group/systray": {
+    "orientation": "horizontal",
+    "modules": ["tray", "power-profiles-daemon"],
+  },
+  "group/end-left-module": {
+    "orientation": "horizontal",
+    "modules": ["pulseaudio", "backlight"],
+  },
+  "group/end-right-module": {
+    "orientation": "horizontal",
+    "modules": ["clock", "battery"],
+  },
+}
