@@ -1,8 +1,8 @@
 [global]
 font = ZedMono Nerd Font Propo 16
-origin = top-center
+origin = top-right
 
-offset = 0x40
+offset = 0x0
 width = 480
 
 progress_bar = true
