@@ -106,22 +106,24 @@ export FZF_DEFAULT_OPTS=$FZF_DEFAULT_OPTS'
   --color=border:#27a1b9,query:#c0caf5
   --marker=":" --pointer=">"'
 
-SEARCH="$HOME/box/dotfiles/fzf"
+UTILS="$HOME/box/dotfiles/utils"
+SCRIPTS="$HOME/box/dotfiles/scripts"
 
 # Define aliases.
 alias l="eza -liha"
 alias c="clear -x"
 alias nv="nvim"
 alias nvd="neovide --fork"
-alias f=". $SEARCH/search.sh"
-alias dev=". $SEARCH/dev_search.sh"
-alias box=". $SEARCH/box_search.sh"
+alias sw="stow -t $HOME"
+alias f=". $SCRIPTS/fzf/search.sh"
+alias dev=". $SCRIPTS/fzf/dev_search.sh"
+alias box=". $SCRIPTS/fzf/box_search.sh"
 alias u-nixos="sudo nixos-rebuild switch --flake '$HOME/box/nixos#default'"
+alias ff="fastfetch --logo-color-1 red --file $UTILS/ascii/bunny.txt --config paleofetch"
 
 alias config-zsh="$EDITOR ~/.zshrc"
 alias config-tmux="$EDITOR ~/.tmux.conf"
 
-alias ff="fastfetch --logo-color-1 red --file $HOME/box/dotfiles/ascii/bunny.txt --config paleofetch"
 
 #remaps
 bindkey -r '^F'
