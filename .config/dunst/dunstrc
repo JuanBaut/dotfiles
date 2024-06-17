@@ -1,6 +1,6 @@
 [global]
 font = ZedMono Nerd Font Propo 16
-origin = bottom-center
+origin = top-center
 
 offset = 0x40
 width = 480
