@@ -1,5 +1,5 @@
 # dotfiles
-![image](https://github.com/JuanBaut/dotfiles/assets/90160941/e03403c5-e782-4b5f-9678-b2f6a136e201)
+![image](https://github.com/JuanBaut/dotfiles/assets/90160941/ffd057a8-fea9-4b41-bacb-267765e41e90)
 
 I use too many things to list them here, but...
 - Nvim is just better.
@@ -10,26 +10,4 @@ I use too many things to list them here, but...
 Use this repo with stow.
 ```sh
 stow -t "$HOME" .
-```
-
-```
-╭─────────────────────────────╮
-│     *      ·   .   ·     *  │
-│  *     ·      /#\    .  .   │
-│      ·       /###\       ·  │
-│ ·  .        /#####\ ·       │
-│    ·   ·   /#######\  ·  ·  │
-│           / \#######\       │
-│  .    ·  /  / *######\   ·  │
-│         /  /    *#####\     │
-│    .   /  /   .   *####\  . │
-│  .    /  /         *####\   │
-│      /  /  .        *####,  │
-│     /  /       .     *###|  │
-│    /  /               *##'  │
-│   /  /                *#/   │
-│  /  /      (\ /)      ;/    │
-│ /  /       ( × ×)     /     │
-│/  /        J(")(")          │
-╰─────────────────────────────╯
 ```
