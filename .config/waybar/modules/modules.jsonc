@@ -1,0 +1,63 @@
+{
+  // Workspaces
+  "hyprland/workspaces": {
+    "active-only": false,
+    "format": "{name}"
+  },
+  //Taskbar
+  "hyprland/window": {
+    "max-length": 40
+  },
+  // Clock
+  "clock": {
+    "interval": 1,
+    "format": "· {:%H:%M} ·",
+    "format-alt": "{:%H:%M:%S | %d·%m·%Y }"
+  },
+  // Battery
+  "battery": {
+    "states": {
+      "warning": 30,
+      "critical": 15
+    },
+    "format-icons": [
+      "<span color='#909090'>BAT</span>"
+    ],
+    "format": "{icon} {capacity}",
+    "format-full": "{icon} {capacity}",
+    "format-charging": "{icon} {capacity}",
+    "format-plugged": "{icon} {capacity}",
+    "format-alt": "{time}"
+  },
+  // Audio Information
+  "pulseaudio": {
+    "format-icons": [
+      "<span color='#909090'>VOL</span>"
+    ],
+    "format": "{icon} {volume}",
+    "format-source": "{icon} {volume}",
+    "format-bluetooth": "{icon} {volume}",
+    "format-muted": "<span color='#909090'>MUTE</span>",
+    "format-bluetooth-muted": "<span color='#909090'>MUTE</span>",
+    "on-click": "pavucontrol"
+  },
+  // Brightness Information
+  "backlight": {
+    "format": "<span color='#909090'>BRT</span> {percent}",
+    "reverse-scrolling": true
+  },
+  "cpu": {
+    "format": "<span color='#909090'>CPU</span> {usage}"
+  },
+  "memory": {
+    "format": "<span color='#909090'>RAM</span> {}"
+  },
+  "disk": {
+    "format": "<span color='#909090'>{path}</span> {percentage_used}"
+  },
+  // System Tray
+  "tray": {
+    "icon-size": 28,
+    "spacing": 5
+  }
+}

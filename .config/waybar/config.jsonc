@@ -1,0 +1,29 @@
+// My Custom waybar configuration
+[
+  {
+    "layer": "bottom",
+    "position": "top",
+    "spacing": 6,
+    "exclusive": true,
+    "fixed-center": true,
+    "modules-left": [
+      "hyprland/workspaces",
+      "hyprland/window"
+    ],
+    "modules-center": [
+      "clock"
+    ],
+    "modules-right": [
+      "battery",
+      "pulseaudio",
+      "backlight",
+      "cpu",
+      "memory",
+      "disk",
+      "tray"
+    ],
+    "include": [
+      "~/.config/waybar/modules/modules.jsonc"
+    ]
+  }
+]

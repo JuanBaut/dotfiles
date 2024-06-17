@@ -1,0 +1,144 @@
+* {
+  font-family: "ZedMono Nerd Font";
+  font-size: 20px;
+}
+
+window {
+  background-color: rgba(16, 16, 16, 0.85);
+  transition-property: background-color;
+  transition-duration: 0.5s;
+}
+
+tooltip {
+  background-color: #101010;
+  border: 2 white solid;
+}
+
+#backlight,
+#pulseaudio,
+#tray,
+#cpu,
+#memory,
+#disk,
+#battery{
+  margin: 0 12 0 12;
+  color: white;
+}
+
+#clock,
+#temperature,
+#network,
+#wireplumber,
+#custom-media,
+#mode,
+#idle_inhibitor,
+#scratchpad,
+#systray,
+#mpd {
+  padding: 0 12 0 12;
+  color: white;
+}
+
+@keyframes blink-workspace {
+  to {
+    color: rgba(255, 255, 255, 0.7);
+    font-weight: 800;
+  }
+}
+
+#workspaces {
+  color: rgba(255, 255, 255, 1);
+  margin: 0 0 0 12;
+}
+
+#workspaces button {
+  transition: all 0.4s ease-out;
+  padding: 0 6 0 6;
+  margin: 8;
+  color: #101010;
+  background-color: #707070;
+}
+
+#workspaces button.active {
+  animation-duration: 0.1s;
+
+  font-weight: 800;
+  color: #101010;
+  background-color: #989898;
+  padding: 0 32 0 32;
+  margin: 8;
+}
+
+#workspaces button.urgent {
+  color: #606060;
+  font-weight: 800;
+  animation-duration: 0.5s;
+  animation-name: blink-workspace;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+#workspaces button.empty {
+  color: #606060;
+  background-color: #202020;
+  animation-name: blink-workspace;
+  animation-duration: 0.5s;
+  animation-timing-function: steps(12);
+  animation-iteration-count: 4;
+  animation-direction: alternate;
+}
+
+#workspaces button.occupied {
+  background-color: #202020;
+}
+
+#pulseaudio.muted {
+  color: rgba(220, 50, 47, 1);
+}
+
+#battery.charging,
+#battery.plugged {
+  color: rgba(137, 206, 0, 1);
+}
+
+@keyframes blink-battery {
+  to {
+    color: rgba(255, 255, 255, 1);
+  }
+}
+
+/* Using steps() instead of linear as a timing function to limit cpu usage */
+#battery.warning:not(.charging) {
+  color: rgba(255, 193, 0, 1);
+  animation-name: blink-battery;
+  animation-duration: 0.5s;
+  animation-timing-function: steps(12);
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+#battery.critical:not(.charging) {
+  color: rgba(245, 60, 60, 1);
+  animation-name: blink-battery;
+  animation-duration: 0.5s;
+  animation-timing-function: steps(12);
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+#tray > .passive {
+  -gtk-icon-effect: dim;
+}
+
+#tray > .needs-attention {
+  -gtk-icon-effect: highlight;
+  background-color: rgba(235, 77, 75, 1);
+}
+
+#custom-power {
+  color: rgba(255, 255, 255, 1);
+  border: 0.19em solid rgba(246, 82, 79, 1);
+  background-color: rgba(0, 43, 54, 0.7);
+  padding: 0 14;
+  color: rgba(245, 60, 60, 1);
+}

@@ -121,7 +121,7 @@ alias u-nixos="sudo nixos-rebuild switch --flake '$HOME/box/nixos#default'"
 alias config-zsh="$EDITOR ~/.zshrc"
 alias config-tmux="$EDITOR ~/.tmux.conf"
 
-alias ff="fastfetch --logo-color-1 blue --file $HOME/box/dotfiles/reaper.txt"
+alias ff="fastfetch --logo-color-1 red --file $HOME/box/dotfiles/ascii/bunny.txt --config paleofetch"
 
 #remaps
 bindkey -r '^F'
