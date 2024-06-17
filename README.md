@@ -1,5 +1,5 @@
 # dotfiles
-![image](https://github.com/JuanBaut/dotfiles/assets/90160941/ffd057a8-fea9-4b41-bacb-267765e41e90)
+![image](https://github.com/JuanBaut/dotfiles/assets/90160941/a776fc3f-8a46-448d-abe7-8f7c13b8bc72)
 
 I use too many things to list them here, but...
 - Nvim is just better.
