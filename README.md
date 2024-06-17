@@ -1,6 +1,7 @@
 # dotfiles
+![image](https://github.com/JuanBaut/dotfiles/assets/90160941/e03403c5-e782-4b5f-9678-b2f6a136e201)
 
-I use to many things to list here, but...
+I use too many things to list them here, but...
 - Nvim is just better.
 - Unix has always been better.
 - MacOS as backup and Nixos for perfection. 
