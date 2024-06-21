@@ -100,7 +100,7 @@ else
 fi
 
 export FZF_DEFAULT_OPTS=$FZF_DEFAULT_OPTS'
-  --color=fg:#737aa2,fg+:#c0caf5,bg:-1,bg+:#101010
+  --color=fg:#737aa2,fg+:#c0caf5,bg:-1,bg+:-1
   --color=hl:#2ac3de,hl+:#2ac3de,info:#7dcfff,marker:#2ac3de
   --color=prompt:#2ac3de,spinner:#2ac3de,pointer:#2ac3de,header:#565f89
   --color=border:#27a1b9,query:#c0caf5
