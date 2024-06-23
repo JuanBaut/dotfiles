@@ -7,14 +7,19 @@
 - Nothing is better than Zsh, Tmux and Alacritty together.
 - MacOS as backup and Nixos for perfection in terms of productivity. 
 
+Clone the repo with the neovim submodule.
+```sh
+git clone --recurse-submodules git@github.com:JuanBaut/dotfiles.git
+```
+
 Use this repo with stow.
 ```sh
 stow -t "$HOME" .
 ```
 
-Link neovim.
+Setup macOS.
 ```sh
-stow -t "$HOME" -S neovim
+stow -t "$HOME" -S macos neovim
 ```
 
 ## Considerations
@@ -33,5 +38,8 @@ across nixos and macos.
 - ```./neovim/.config/nvim```:
     - Git submodule because I like having the repos and commit history separated but
     also stow it from the same dotfiles directory.
+
+- ```./.local/share/icons/macOS```:
+    - It is a custom hyprland cursor.
 
 - My dependencies are managed by nixos and nix-darwin.
