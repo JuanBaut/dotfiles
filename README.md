@@ -4,8 +4,8 @@
 I use too many things to list them here, but...
 - Nvim is just better.
 - Unix has always been better.
-- MacOS as backup and Nixos for perfection. 
-- Nothing is better than Zsh, Tmux and Alacritty combo.
+- Nothing is better than Zsh, Tmux and Alacritty together.
+- MacOS as backup and Nixos for perfection in terms of productivity. 
 
 Use this repo with stow.
 ```sh

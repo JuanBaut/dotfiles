@@ -1,0 +1,30 @@
+import = [
+"~/.config/alacritty/theme.toml",
+"~/.config/alacritty/keybinds.toml"
+]
+
+[env]
+TERM = "xterm-256color"
+
+[font]
+size = 15
+
+#offset = { y = 6 }
+#glyph_offset = { y = 1 } #RecMono
+
+[font.normal]
+family = "JetBrainsMono Nerd Font Propo"
+#family = "RecMonoLinear Nerd Font Propo"
+#family = "RecMonoCasual Nerd Font Propo"
+
+[window]
+dynamic_title = false
+decorations = "none"
+startup_mode = "SimpleFullscreen"
+title = "Touch grass"
+dynamic_padding = true
+option_as_alt = "Both"
+
+[window.padding]
+x = 5
+y = 5
