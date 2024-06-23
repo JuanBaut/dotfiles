@@ -9,17 +9,7 @@ TERM = "xterm-256color"
 [font]
 size = 18
 
-#offset = { y = 3 }
-#glyph_offset = { y = 1 } #RecMono
-
-#offset = { x = 2 }
-#glyph_offset = { x = 1 } #ZedMono
-
 [font.normal]
-#family = "RecMonoCasual Nerd Font"
-#family = "RecMonoLinear Nerd Font"
-#family = "ZedMono Nerd Font"
-#family = "Lilex Nerd Font"
 #family = "GeistMono Nerd Font"
 family = "JetBrainsMono Nerd Font"
 
