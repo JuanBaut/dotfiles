@@ -4,13 +4,13 @@ import = [
 ]
 
 [env]
-TERM = "xterm-256color"
+TERM = "alacritty"
 
 [font]
 size = 15
 
-#offset = { y = 6 }
-#glyph_offset = { y = 1 } #RecMono
+#offset = { y = 4 }
+#glyph_offset = { y = 2 } #RecMono
 
 [font.normal]
 family = "JetBrainsMono Nerd Font Propo"
