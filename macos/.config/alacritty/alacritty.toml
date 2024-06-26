@@ -9,13 +9,13 @@ TERM = "alacritty"
 [font]
 size = 15
 
-#offset = { y = 4 }
-#glyph_offset = { y = 2 } #RecMono
+offset = { y = 4 }
+glyph_offset = { y = 2 } #RecMono
 
 [font.normal]
-family = "JetBrainsMono Nerd Font Propo"
-#family = "RecMonoLinear Nerd Font Propo"
-#family = "RecMonoCasual Nerd Font Propo"
+family = "RecMonoLinear Nerd Font"
+#family = "JetBrainsMono Nerd Font"
+#family = "RecMonoCasual Nerd Font"
 
 [window]
 dynamic_title = false
@@ -26,5 +26,5 @@ dynamic_padding = true
 option_as_alt = "Both"
 
 [window.padding]
-x = 5
-y = 5
+x = 4
+y = 4
