@@ -13,9 +13,9 @@ offset = { y = 4 }
 glyph_offset = { y = 2 } #RecMono
 
 [font.normal]
-family = "RecMonoLinear Nerd Font"
+#family = "RecMonoLinear Nerd Font"
 #family = "JetBrainsMono Nerd Font"
-#family = "RecMonoCasual Nerd Font"
+family = "RecMonoCasual Nerd Font"
 
 [window]
 dynamic_title = false
