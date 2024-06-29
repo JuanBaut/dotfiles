@@ -101,9 +101,9 @@ fi
 
 export FZF_DEFAULT_OPTS=$FZF_DEFAULT_OPTS'
   --color=fg:15,fg+:8,bg:-1,bg+:-1
-  --color=hl:1,hl+:1,info:1,marker:1
-  --color=prompt:1,spinner:1,pointer:1,header:1
-  --color=border:1,query:15
+  --color=hl:15,hl+:15,info:15,marker:15
+  --color=prompt:15,spinner:15,pointer:15,header:15
+  --color=border:15,query:15
   --marker=":" --pointer="»"'
 
 UTILS="$HOME/box/dotfiles/utils"
