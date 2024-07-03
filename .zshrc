@@ -1,11 +1,9 @@
-# Personal Zsh configuration file. It is strongly recommended to keep all
-# shell customization and configuration (including exported environment
-# variables such as PATH) in this file or in files sourced from it.
-#
-# Documentation: https://github.com/romkatv/zsh4humans/blob/v5/README.md.
+# Nix
+if [ -e '/nix/var/nix/profiles/default/etc/profile.d/nix-daemon.sh' ]; then
+  . '/nix/var/nix/profiles/default/etc/profile.d/nix-daemon.sh'
+fi
 
 # Periodic auto-update on Zsh startup: 'ask' or 'no'.
-# You can manually run `z4h update` to update everything.
 zstyle ':z4h:' auto-update      'ask'
 # Ask whether to auto-update this often; has no effect if auto-update is 'no'.
 zstyle ':z4h:' auto-update-days '28'
@@ -119,6 +117,8 @@ alias f=". $SCRIPTS/fzf/search.sh"
 alias dev=". $SCRIPTS/fzf/dev_search.sh"
 alias box=". $SCRIPTS/fzf/box_search.sh"
 alias u-nixos="sudo nixos-rebuild switch --flake '$HOME/box/nixos#default'"
+alias u-darwin="nix --extra-experimental-features 'nix-command flakes' run nix-darwin -- switch --flake ~/box/nixdarwin"
+
 alias ff="fastfetch --logo-color-1 red --file $UTILS/ascii/bunny.txt --config paleofetch"
 
 alias config-zsh="$EDITOR ~/.zshrc"
@@ -136,9 +136,3 @@ bindkey '^B' backward-delete-char
 # Set shell options: http://zsh.sourceforge.net/Doc/Release/Options.html.
 setopt glob_dots     # no special treatment for file names with a leading dot
 setopt no_auto_menu  # require an extra TAB press to open the completion menu
-
- # Nix
- if [ -e '/nix/var/nix/profiles/default/etc/profile.d/nix-daemon.sh' ]; then
-    . '/nix/var/nix/profiles/default/etc/profile.d/nix-daemon.sh'
- fi
- # End Nix

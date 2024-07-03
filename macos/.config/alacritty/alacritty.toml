@@ -3,9 +3,11 @@ import = [
 "~/.config/alacritty/keybinds.toml"
 ]
 
+[env]
+TERM = "alacritty"
+
 [font]
 size = 15
-
 offset = { y = 4 }
 glyph_offset = { y = 2 } #RecMono
 
