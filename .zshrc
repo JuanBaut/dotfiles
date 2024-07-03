@@ -100,7 +100,7 @@ else
 fi
 
 export FZF_DEFAULT_OPTS=$FZF_DEFAULT_OPTS'
-  --color=fg:15,fg+:8,bg:-1,bg+:-1
+  --color=fg:15,fg+:7,bg:-1,bg+:-1
   --color=hl:15,hl+:15,info:15,marker:15
   --color=prompt:15,spinner:15,pointer:15,header:15
   --color=border:15,query:15
