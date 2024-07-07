@@ -98,10 +98,10 @@ else
 fi
 
 export FZF_DEFAULT_OPTS=$FZF_DEFAULT_OPTS'
-  --color=fg:15,fg+:7,bg:-1,bg+:-1
-  --color=hl:15,hl+:15,info:15,marker:15
-  --color=prompt:15,spinner:15,pointer:15,header:15
-  --color=border:15,query:15
+  --color=fg:8,fg+:6,bg:-1,bg+:-1
+  --color=hl:6,hl+:6,info:6,marker:6
+  --color=prompt:6,spinner:6,pointer:6,header:6
+  --color=border:6,query:7
   --marker=":" --pointer="»"'
 
 UTILS="$HOME/box/dotfiles/utils"
