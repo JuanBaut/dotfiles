@@ -1,8 +1,8 @@
 theme = "tokyonight"
 
-#[editor]
-#line-number = "relative"
-#mouse = false
+[editor]
+popup-border = "all"
+undercurl = true
 
 [editor.cursor-shape]
 insert = "bar"
