@@ -1,6 +1,6 @@
-// My Custom waybar configuration
 [
   {
+    "margin": "10px 10px 0 10px",
     "layer": "bottom",
     "position": "top",
     "spacing": 6,

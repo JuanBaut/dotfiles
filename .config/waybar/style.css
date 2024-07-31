@@ -1,17 +1,28 @@
 * {
   font-family: "ZedMono Nerd Font";
-  font-size: 20px;
+  font-size: 20.5px;
 }
 
 window {
-  background-color: rgba(16, 16, 16, 0.85);
+  background-color: rgba(16, 16, 16, 0.90);
   transition-property: background-color;
   transition-duration: 0.5s;
+
+  border-radius: 8px;
 }
 
 tooltip {
   background-color: #101010;
-  border: 2 white solid;
+  border: 2px solid #808080;
+}
+
+tooltip label {
+  color: white;
+  margin: 10px;
+}
+
+#window {
+  margin: 0 0 0 8;
 }
 
 #backlight,
@@ -48,44 +59,49 @@ tooltip {
 
 #workspaces {
   color: rgba(255, 255, 255, 1);
-  margin: 0 0 0 12;
+  margin: 0 0 0 0;
 }
 
 #workspaces button {
   transition: all 0.4s ease-out;
+  animation-timing-function: steps(12);
+
   padding: 0 6 0 6;
-  margin: 8;
+  margin: 8 0 8 8;
   color: #101010;
   background-color: #707070;
 }
 
 #workspaces button.active {
   animation-duration: 0.1s;
+  animation-timing-function: steps(12);
 
   font-weight: 800;
   color: #101010;
   background-color: #989898;
   padding: 0 32 0 32;
-  margin: 8;
 }
 
 #workspaces button.urgent {
+  animation-duration: 0.5s;
+  animation-timing-function: steps(12);
+
   color: #606060;
   font-weight: 800;
-  animation-duration: 0.5s;
   animation-name: blink-workspace;
   animation-iteration-count: infinite;
   animation-direction: alternate;
 }
 
 #workspaces button.empty {
-  color: #606060;
-  background-color: #202020;
-  animation-name: blink-workspace;
   animation-duration: 0.5s;
-  animation-timing-function: steps(12);
   animation-iteration-count: 4;
   animation-direction: alternate;
+  animation-name: blink-workspace;
+  animation-timing-function: steps(12);
+
+  color: #606060;
+  background-color: #202020;
 }
 
 #workspaces button.occupied {
@@ -107,23 +123,24 @@ tooltip {
   }
 }
 
-/* Using steps() instead of linear as a timing function to limit cpu usage */
 #battery.warning:not(.charging) {
-  color: rgba(255, 193, 0, 1);
-  animation-name: blink-battery;
   animation-duration: 0.5s;
-  animation-timing-function: steps(12);
-  animation-iteration-count: infinite;
+  animation-name: blink-battery;
   animation-direction: alternate;
+  animation-iteration-count: infinite;
+  animation-timing-function: steps(12);
+
+  color: rgba(255, 193, 0, 1);
 }
 
 #battery.critical:not(.charging) {
+  animation-duration: 0.5s;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+  animation-timing-function: steps(12);
+
   color: rgba(245, 60, 60, 1);
   animation-name: blink-battery;
-  animation-duration: 0.5s;
-  animation-timing-function: steps(12);
-  animation-iteration-count: infinite;
-  animation-direction: alternate;
 }
 
 #tray > .passive {
