@@ -2,7 +2,7 @@
 font = ZedMono Nerd Font Propo 16
 origin = top-right
 
-offset = 0x0
+offset = 10x10 
 width = 480
 
 progress_bar = true
@@ -15,8 +15,8 @@ max_icon_size = 64
 icon_corner_radius = 6
 
 frame_width = 2
-corner_radius = 6
-frame_color = "#ffffff"
+corner_radius = 8ffffff
+frame_color = "#c2c2c2"
 separator_color = frame
 
 background = "#202020"

@@ -40,10 +40,15 @@
   "battery": {
     "states": {
       "warning": 30,
-      "critical": 15
+      "critical": 13
     },
     "format-icons": [
-      "<span color='#909090'>BAT</span>"
+      "<span color='#c2c2c2' font_desc='Material Symbols Rounded 21.5 @FILL=1,opsz=40,GRAD=-25,wght=300' rise='-9.5pt' baseline_shift='subscript' line_height='-1'>&#xf8ae;</span>",
+      "<span color='#c2c2c2' font_desc='Material Symbols Rounded 21.5 @FILL=1,opsz=40,GRAD=-25,wght=300' rise='-9.5pt' baseline_shift='subscript' line_height='-1'>&#xf147;</span>",
+      "<span color='#c2c2c2' font_desc='Material Symbols Rounded 21.5 @FILL=1,opsz=40,GRAD=-25,wght=300' rise='-9.5pt' baseline_shift='subscript' line_height='-1'>&#xf155;</span>",
+      "<span color='#c2c2c2' font_desc='Material Symbols Rounded 21.5 @FILL=1,opsz=40,GRAD=-25,wght=300' rise='-9.5pt' baseline_shift='subscript' line_height='-1'>&#xf8af;</span>",
+      "<span color='#c2c2c2' font_desc='Material Symbols Rounded 21.5 @FILL=1,opsz=40,GRAD=-25,wght=300' rise='-9.5pt' baseline_shift='subscript' line_height='-1'>&#xf8b0;</span>",
+      "<span color='#c2c2c2' font_desc='Material Symbols Rounded 21.5 @FILL=1,opsz=40,GRAD=-25,wght=300' rise='-9.5pt' baseline_shift='subscript' line_height='-1'>&#xf13b;</span>"
     ],
     "format": "{icon} {capacity}",
     "format-full": "{icon} {capacity}",
@@ -54,29 +59,36 @@
   // Audio Information
   "pulseaudio": {
     "format-icons": [
-      "<span color='#909090'>VOL</span>"
+      "<span color='#c2c2c2' font_desc='Material Symbols Rounded 14 @FILL=1,opsz=24' rise='-7pt'>&#xe04e;</span>",
+      "<span color='#c2c2c2' font_desc='Material Symbols Rounded 14 @FILL=1,opsz=24' rise='-7pt'>&#xe04d;</span>",
+      "<span color='#c2c2c2' font_desc='Material Symbols Rounded 14 @FILL=1,opsz=24' rise='-7pt'>&#xe050;</span>"
     ],
     "format": "{icon} {volume}",
     "format-source": "{icon} {volume}",
     "format-bluetooth": "{icon} {volume}",
-    "format-muted": "<span color='#909090'>MUTE</span>",
-    "format-bluetooth-muted": "<span color='#909090'>MUTE</span>",
+    "format-muted": "<span color='#c2c2c2'>MUTE</span>",
+    "format-bluetooth-muted": "<span color='#c2c2c2'>MUTE</span>",
     "on-click": "pavucontrol"
   },
   // Brightness Information
   "backlight": {
-    "format": "<span color='#909090'>BRT</span> {percent}",
+    "format": "{icon} {percent}",
+    "format-icons": [
+      "<span color='#c2c2c2' font_desc='Material Symbols Rounded 14 @FILL=1,opsz=20' rise='-7pt'>&#xF7E8;</span>",
+      "<span color='#c2c2c2' font_desc='Material Symbols Rounded 14 @FILL=1,opsz=20' rise='-7pt'>&#xe3a9;</span>",
+      "<span color='#c2c2c2' font_desc='Material Symbols Rounded 14 @FILL=1,opsz=20' rise='-7pt'>&#xE1AC;</span>"
+    ],
     "reverse-scrolling": true,
     "tooltip": false
   },
   "cpu": {
-    "format": "<span color='#909090'>CPU</span> {usage}"
+    "format": "<span color='#c2c2c2' font_desc='Material Symbols Rounded 14 @FILL=1,opsz=24' rise='-7pt'>&#xE30D;</span> {usage}"
   },
   "memory": {
-    "format": "<span color='#909090'>RAM</span> {}"
+    "format": "<span color='#c2c2c2' font_desc='Material Symbols Rounded 14 @FILL=1,opsz=24' rise='-7pt'>&#xF7A3;</span> {}"
   },
   "disk": {
-    "format": "<span color='#909090'>{path}</span> {percentage_used}"
+    "format": "<span color='#c2c2c2' font_desc='Material Symbols Rounded 14 @FILL=1,opsz=24' rise='-7pt'>&#xF20E;</span> {path} {percentage_used}"
   },
   // System Tray
   "tray": {

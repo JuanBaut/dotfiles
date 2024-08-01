@@ -1,10 +1,10 @@
 * {
   font-family: "ZedMono Nerd Font";
-  font-size: 20.5px;
+  font-size: 20px;
 }
 
 window {
-  background-color: rgba(16, 16, 16, 0.90);
+  background-color: rgba(0, 0, 0, 0.6);
   transition-property: background-color;
   transition-duration: 0.5s;
 
