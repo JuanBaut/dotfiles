@@ -23,7 +23,7 @@
       "tray"
     ],
     "include": [
-      "~/.config/waybar/modules/modules.jsonc"
+      "~/.config/waybar/modules.jsonc"
     ]
   }
 ]
