@@ -1,1 +1,6 @@
-../../../.config/alacritty/keybinds.toml
+[keyboard]
+bindings = [
+{ key = "S", mods = "Alt", action = "ToggleViMode" },
+{ key = "V", mods = "Alt", action = "Paste" },
+{ key = "C", mods = "Alt", action = "Copy" },
+]
