@@ -10,7 +10,8 @@ glyph_offset = { y = 2 } #RecMono
 #family = "JetBrainsMono Nerd Font"
 #family = "RecMonoLinear Nerd Font"
 #family = "RecMonoCasual Nerd Font"
-family = "RecMonoDuotone Nerd Font Propo"
+#family = "RecMonoDuotone Nerd Font Propo"
+family = "CommitMono Nerd Font Propo"
 
 [window]
 dynamic_title = false
