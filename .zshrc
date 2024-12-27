@@ -116,7 +116,7 @@ alias sw="stow -t $HOME"
 alias f=". $SCRIPTS/fzf/search.sh"
 alias dev=". $SCRIPTS/fzf/dev_search.sh"
 alias box=". $SCRIPTS/fzf/box_search.sh"
-
+alias u-wsl="sudo nixos-rebuild switch --flake '$HOME/box/wslnixos#default'"
 alias u-nixos="sudo nixos-rebuild switch --flake '$HOME/box/nixos#default'"
 alias u-darwin="nix --extra-experimental-features 'nix-command flakes' run nix-darwin -- switch --flake ~/box/nixdarwin"
 alias config-zsh="$EDITOR ~/.zshrc"
