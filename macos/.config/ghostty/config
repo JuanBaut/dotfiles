@@ -18,27 +18,7 @@ font-feature = -liga
 font-feature = -calt
 font-feature = -dlig
 font-family = Input Mono
-
-# unicode points incase i want to use a non nerd-font
-font-codepoint-map = U+E5FA-U+E6B5        = Symbols Only Nerd Font
-font-codepoint-map = U+E700-U+E7C5        = Symbols Only Nerd Font
-font-codepoint-map = U+ED00-U+F2FF        = Symbols Only Nerd Font
-font-codepoint-map = U+E200-U+E2A9        = Symbols Only Nerd Font
-font-codepoint-map = U+E300-U+E3E3        = Symbols Only Nerd Font
-font-codepoint-map = U+F400-U+F533        = Symbols Only Nerd Font
-font-codepoint-map = U+E0A0-U+E0A2        = Symbols Only Nerd Font
-font-codepoint-map = U+E0A3,U+E0CA        = Symbols Only Nerd Font
-font-codepoint-map = U+2665,U+26A1        = Symbols Only Nerd Font
-font-codepoint-map = U+E0B0-U+E0B3        = Symbols Only Nerd Font
-font-codepoint-map = U+E0B4-U+E0C8        = Symbols Only Nerd Font
-font-codepoint-map = U+E0CC-U+E0D7        = Symbols Only Nerd Font
-font-codepoint-map = U+2500-U+259F        = Symbols Only Nerd Font
-font-codepoint-map = U+F300-U+F375        = Symbols Only Nerd Font
-font-codepoint-map = U+E000-U+E00A        = Symbols Only Nerd Font
-font-codepoint-map = U+EA60-U+EC1E        = Symbols Only Nerd Font
-font-codepoint-map = U+276C-U+2771        = Symbols Only Nerd Font
-font-codepoint-map = U+F0001-U+F1AF0      = Symbols Only Nerd Font
-font-codepoint-map = U+23FB-U+23FE,U+2B58 = Symbols Only Nerd Font
+font-family = Symbols Nerd Font Mono
 
 background = #07090D
 
