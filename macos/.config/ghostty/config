@@ -1,7 +1,9 @@
 quit-after-last-window-closed = true
 macos-titlebar-style = hidden
 macos-option-as-alt = true
+
 theme = tokyonight
+custom-shader = crt.glsl
 
 window-width = 10000
 window-height = 10000
