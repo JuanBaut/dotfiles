@@ -9,9 +9,9 @@ window-padding-x = 2
 window-padding-y = 0
 window-padding-balance = true
 
-adjust-cell-height = 5
+adjust-cell-height = 7
 adjust-font-baseline = 0
-adjust-underline-position = 1
+adjust-underline-position = 5
 
 font-size = 14
 font-feature = -liga
