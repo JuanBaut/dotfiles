@@ -1,8 +1,7 @@
-theme = "tokyonight"
-
 [editor]
 popup-border = "all"
 undercurl = true
+scrolloff = 999
 
 [editor.cursor-shape]
 insert = "bar"
@@ -11,3 +10,7 @@ select = "underline"
 
 [editor.file-picker]
 hidden = false
+
+[editor.indent-guides]
+render = true
+character = "🭰"
