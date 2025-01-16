@@ -1,7 +1,10 @@
+theme = "github_dark"
+
 [editor]
 popup-border = "all"
 undercurl = true
 scrolloff = 999
+autoformat = true
 
 [editor.cursor-shape]
 insert = "bar"
@@ -10,7 +13,3 @@ select = "underline"
 
 [editor.file-picker]
 hidden = false
-
-[editor.indent-guides]
-render = true
-character = "🭰"
